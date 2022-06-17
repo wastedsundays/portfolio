@@ -20,7 +20,7 @@ function NavBar() {
 
 
   return (
-    <nav className='NavBar'>
+    <nav className='navbar'>
 
         <NavHashLink smooth to='#top'>
             <img
