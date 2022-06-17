@@ -8,6 +8,7 @@ import ContactSection from '../components/ContactSection';
 function MainPage() {
   return (
     <div>
+
         <HomeSection />
         <AboutSection />
         <ProjectsSection />
