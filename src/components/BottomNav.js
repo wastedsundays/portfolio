@@ -18,7 +18,7 @@ function BottomNav() {
     <nav className="bottom-nav">
         <ul>
           <li>
-            <NavHashLink smooth to="/#home" >
+            <NavHashLink smooth to="#top" >
               <PersonIcon />
               <p>Home</p>
             </NavHashLink>
@@ -42,7 +42,7 @@ function BottomNav() {
             </NavHashLink>
           </li>
         </ul>
-        
+
     </nav>
     
       );
