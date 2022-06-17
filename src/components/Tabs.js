@@ -13,9 +13,6 @@ function TabPanel(props) {
     const { children, value, index, ...other } = props;
   
   
-  
-  
-  
     return (
       <div
         role="tabpanel"
@@ -79,47 +76,50 @@ function TabPanel(props) {
       { isLoaded ?
         <>
           <Box sx={{ width: '100%' }}>
-          <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-            <Tabs   value={value} 
+            <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+              <Tabs   value={value} 
                     onChange={handleChange} 
                     variant="scrollable"
                     scrollButtons 
                     allowScrollButtonsMobile 
                     aria-label="basic tabs example">
-              <Tab label={restData.title.rendered} {...a11yProps(0)} />
-              <Tab label="Movie Database" {...a11yProps(1)} />
-              <Tab label="Capstone Project" {...a11yProps(2)} />
-              <Tab label="Portfolio Site" {...a11yProps(3)} />
-            </Tabs>
+                <Tab label={restData.title.rendered} {...a11yProps(0)} />
+                <Tab label="Movie Database" {...a11yProps(1)} />
+                <Tab label="Capstone Project" {...a11yProps(2)} />
+                <Tab label="Portfolio Site" {...a11yProps(3)} />
+              </Tabs>
+            </Box>
+
+            {/* Tab Content  */}
+            <TabPanel value={value} index={0}>
+              {restData.link}
+              <img
+                  src={restData.acf.project_featured_image}
+                  className="featured-image"
+                  alt="Logo"
+                  />
+              {restData.acf.project_description}
+              {restData.acf.project_feature}
+            </TabPanel>
+
+            <TabPanel value={value} index={1}>
+              Movie Database content from Wordpress API custom post type "Projects"
+            </TabPanel>
+
+            <TabPanel value={value} index={2}>
+              Capstone Project content from Wordpress API custom post type "Projects"
+            </TabPanel>
+
+            <TabPanel value={value} index={3}>
+              Portfolio Project content from Wordpress API custom post type "Projects"
+              Portfolio Project content from Wordpress API custom post type "Projects"
+              Portfolio Project content from Wordpress API custom post type "Projects"
+              Portfolio Project content from Wordpress API custom post type "Projects"
+              Portfolio Project content from Wordpress API custom post type "Projects"
+              Portfolio Project content from Wordpress API custom post type "Projects"
+              
+            </TabPanel>
           </Box>
-          <TabPanel value={value} index={0}>
-          {restData.link}
-          <img
-              src={restData.acf.project_featured_image}
-              className="featured-image"
-              alt="Logo"
-              />
-         {restData.acf.project_description}
-         {restData.acf.project_feature}
-          
-        
-          </TabPanel>
-          <TabPanel value={value} index={1}>
-            Movie Database content from Wordpress API custom post type "Projects"
-          </TabPanel>
-          <TabPanel value={value} index={2}>
-            Capstone Project content from Wordpress API custom post type "Projects"
-          </TabPanel>
-          <TabPanel value={value} index={3}>
-            Portfolio Project content from Wordpress API custom post type "Projects"
-            Portfolio Project content from Wordpress API custom post type "Projects"
-            Portfolio Project content from Wordpress API custom post type "Projects"
-            Portfolio Project content from Wordpress API custom post type "Projects"
-            Portfolio Project content from Wordpress API custom post type "Projects"
-            Portfolio Project content from Wordpress API custom post type "Projects"
-            
-          </TabPanel>
-        </Box>
         </>
         :
         <h1>Please wait...</h1>
