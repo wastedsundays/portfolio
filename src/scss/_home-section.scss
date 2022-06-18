@@ -1,0 +1,13 @@
+@use 'variables';
+
+
+.home-section{
+    img{
+        width: 50%;
+        max-width: 320px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 35px;
+        border: 2px solid variables.$honolulu;
+    }
+}

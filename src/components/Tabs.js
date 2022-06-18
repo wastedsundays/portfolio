@@ -91,7 +91,7 @@ function TabPanel(props) {
 
             {/* Tab Content  */}
             <TabPanel value={value} index={0}>
-              {restData.link}
+              {/* {restData.link} */}
               <img
                   src={restData.acf.project_featured_image}
                   className="featured-image"
