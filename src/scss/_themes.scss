@@ -1,9 +1,18 @@
+@use 'variables';
+
+
 #light {
-    color: #333;
-    background-color: #fff;
+    color: variables.$mineshaft;
+    background-color: variables.$white;
   }
 
   #dark {
-    background-color: #333;
-    color: #fff;
-  }
+    background-color: variables.$mineshaft;
+    color: variables.$gallery;
+
+    h1{
+      color: variables.$honolulu;
+    }
+
+    }
+  

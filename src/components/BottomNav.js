@@ -10,10 +10,10 @@ import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 
 
 function BottomNav() {
-    const [hash, setHash] = useState('')
-    const updateHash = () => {
-      setHash(window.location.hash)
-    }
+    // const [hash, setHash] = useState('')
+    // const updateHash = () => {
+    //   setHash(window.location.hash)
+    // }
       return (
     <nav className="bottom-nav">
         <ul>
