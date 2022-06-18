@@ -78,6 +78,7 @@ function TabPanel(props) {
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
               <Tabs   value={value} 
                     onChange={handleChange} 
+                    // centered={true}
                     variant="scrollable"
                     scrollButtons 
                     allowScrollButtonsMobile 
@@ -97,8 +98,8 @@ function TabPanel(props) {
                   className="featured-image"
                   alt="Logo"
                   />
-              {restData.acf.project_description}
-              {restData.acf.project_feature}
+              <p>{restData.acf.project_description}</p>
+              <p>{restData.acf.project_feature}</p>
             </TabPanel>
 
             <TabPanel value={value} index={1}>

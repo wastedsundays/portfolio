@@ -24,6 +24,11 @@
     }
 }
 
+.navbar:hover,nav.main-menu.expanded {
+    width:150px;
+    overflow:visible;
+    }
+
 .nav-logo{
     width: 55px;
 }
