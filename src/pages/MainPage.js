@@ -7,7 +7,7 @@ import ContactSection from '../components/ContactSection';
 
 function MainPage() {
   return (
-    <div>
+    <div className='grid-align'>
 
         <HomeSection />
         <AboutSection />

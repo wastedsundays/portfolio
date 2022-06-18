@@ -1,7 +1,21 @@
 .content-area{
     padding: 0 .6rem;
+
+    @media screen and (min-width: 700px){
+        display: grid;
+        grid-template-columns: 1fr minmax(500px, 1100px) 1fr 110px;
+
+        .grid-align{
+            grid-column-start: 2;
+        }
+    }
 }
 
 section{
+    // padding-top: 3.75rem;
     min-height: 100vh;
+}
+
+.home-section, .about-section, .contact-section{
+    padding-top: 3.75rem;
 }

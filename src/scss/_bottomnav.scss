@@ -32,4 +32,8 @@
         font-size: 87%;
         margin-top: 0;
       }
+
+      @media screen and (min-width: 700px){
+        display: none;
+      }
 }
