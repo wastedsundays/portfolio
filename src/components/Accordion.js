@@ -10,6 +10,8 @@ import SchoolIcon from '@mui/icons-material/School';
 import DeveloperBoardIcon from '@mui/icons-material/DeveloperBoard';
 import InfoIcon from '@mui/icons-material/Info';
 
+import IsotopeReact from './Isotope';
+
 export default function SimpleAccordion() {
 
 
@@ -74,10 +76,12 @@ export default function SimpleAccordion() {
           <Typography><DeveloperBoardIcon />Skills</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+
+        <IsotopeReact />
+          {/* <Typography>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
+          </Typography> */}
         </AccordionDetails>
       </Accordion>
       <Accordion>
