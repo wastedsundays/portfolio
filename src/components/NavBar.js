@@ -9,6 +9,8 @@ import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 
 
 
+
+
 function NavBar() {
 
 
@@ -29,6 +31,7 @@ function NavBar() {
                 alt="Logo"
                 />
         </NavHashLink>
+
 
         
         <ul>
