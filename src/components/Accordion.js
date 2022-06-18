@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
-import Loading from './Loading';
+import Loading from '../images/spinning-record.gif';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -34,14 +34,6 @@ export default function SimpleAccordion() {
       fetchData()
   }, [restPath])
 
-
-
-
-
-
-
-
-
   return (
     <div>
       <Accordion>
@@ -56,11 +48,8 @@ export default function SimpleAccordion() {
 
         { isLoaded ?
           <AccordionDetails>
-                <div className="entry-content" dangerouslySetInnerHTML={{__html:restData.content.rendered}}></div>
-            {/* <h3>these accordion sections should be filled with content from wordpress API</h3>
-            <p>Before starting my career as a front-end web developer and designer, I spent 13 years as a Business Analyst for a regulatory body, where I was responsible for continuous process improvements, collection and analysis of registrant data, and the annual registration renewal process for 35,000 registrants. Prior to that, I spent several years managing a shoe store, helping feet look and feel good while driving sales and providing exceptional customer service, and handling all aspects of running a retail location.</p>
-            <p>I began my working career as an DJ and music programming director, where I decided what to play and when to play it for a wide range of events and clients, including store launches, competitions, nightclubs, and school events. My work took me all over Canada and the Northeastern United States, and I shared a stage with a number of significant artists and groups.</p>
-            <p>After many years of financial analysis and business process improvements, I decided to trade in my spreadsheets for stylesheets and pursue my passion. I recently completed the front-end web developer program at BCIT, and also hold a Diploma in Accounting from Fanshawe College.</p> */}
+                <div className="entry-content" dangerouslySetInnerHTML={{__html:restData.acf.bio}}></div>
+           
           </AccordionDetails>
         :
             // <Loading />

@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react';
+import { createContext, useState, useEffect } from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import ReactSwitch from 'react-switch';
 // import '../scss/styles.scss';
@@ -15,6 +15,10 @@ export const ThemeContext = createContext(null);
 
 
 function App() {
+
+  useEffect(() => {
+    document.title = "Adam H. - Front End Web Developer"
+ }, []);
   const [theme, setTheme] = useState('light');
   const toggleTheme = () => {
     setTheme((curr) =>(curr === 'light' ? 'dark' : 'light'))
