@@ -51,12 +51,18 @@ const IsotopeReact = () => {
   
     return (
       <>
-        <ul>
-          <li onClick={handleFilterKeyChange('*')}>All</li>
-          <li onClick={handleFilterKeyChange('dev')}>Dev</li>
-          <li onClick={handleFilterKeyChange('design')}>Design</li>
-          <li onClick={handleFilterKeyChange('other')}>Other</li>
-        </ul>
+        <div className='selector-buttons'>        
+          <button onClick={handleFilterKeyChange('*')}>All</button>
+          <button onClick={handleFilterKeyChange('fave')}>Favourites</button>
+          {/* <li onClick={handleFilterKeyChange('*')}>All</li> */}
+          <button onClick={handleFilterKeyChange('dev')}>Dev</button>
+          {/* <li onClick={handleFilterKeyChange('dev')}>Dev</li> */}
+          {/* <li onClick={handleFilterKeyChange('design')}>Design</li> */}
+          <button onClick={handleFilterKeyChange('design')}>Design</button>
+          {/* <li onClick={handleFilterKeyChange('other')}>Other</li> */}
+          <button onClick={handleFilterKeyChange('other')}>Other</button>
+        </div>
+
         <hr />
         <ul className="filter-container">
           <div className="filter-item other">
