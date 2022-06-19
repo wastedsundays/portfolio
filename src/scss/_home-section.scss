@@ -10,8 +10,9 @@
         max-width: 250px;
         display: block;
         margin: 0 auto;
-        border-radius: 35px;
+        border-radius: 10px;
         border: 2px solid variables.$honolulu;
+        filter: grayscale(.99);
     }
 
     h1{
@@ -22,5 +23,37 @@
         margin-top:0;
     }
 
-
+      img:hover{
+        animation: bloom ease-in-out .75s forwards;
+      }
+      img:hover::before {
+          animation: circle .75s;
+      }
+      @keyframes bloom {
+          0% {
+              filter: grayscale(.8);
+          }
+          40% {
+              filter: grayscale(.5);
+          }
+          100% {
+              filter: grayscale(0);
+          }
+      }
+      @keyframes circle {
+          0% {
+              opacity: .5;
+          background: rgba(0,118,182,.8);
+          
+          }
+          40% {
+              opacity: 1;
+          background: rgba(0,118,182,.8);
+          }
+          100% {
+              width: 200%;
+              height: 200%;
+              opacity: 0;
+          }
+      }
 }

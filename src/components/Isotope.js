@@ -1,7 +1,10 @@
 import * as React from 'react';
 import Isotope from 'isotope-layout';
 
+import bootstrap from '../skills/skill-icon-bootstrap.png';
+import cakewalk from '../skills/skill-icon-cakewalk.png';
 import crystal from '../skills/skill-icon-crystalreports.png';
+import css from '../skills/skill-icon-css.png';
 import excel from '../skills/skill-icon-excel.png';
 import git from '../skills/skill-icon-git.png';
 import gulp from '../skills/skill-icon-gulp.png';
@@ -12,6 +15,7 @@ import jetreports from '../skills/skill-icon-jetreports.png';
 import jquery from '../skills/skill-icon-jquery.png';
 import photoshop from '../skills/skill-icon-photoshop.png';
 import php from '../skills/skill-icon-php.png';
+import react from '../skills/skill-icon-react.png';
 import sass from '../skills/skill-icon-sass.png';
 import shopify from '../skills/skill-icon-shopify.png';
 import sql from '../skills/skill-icon-sql.png';
@@ -54,73 +58,78 @@ const IsotopeReact = () => {
         <div className='selector-buttons'>        
           <button onClick={handleFilterKeyChange('*')}>All</button>
           <button onClick={handleFilterKeyChange('fave')}>Favourites</button>
-          {/* <li onClick={handleFilterKeyChange('*')}>All</li> */}
           <button onClick={handleFilterKeyChange('dev')}>Dev</button>
-          {/* <li onClick={handleFilterKeyChange('dev')}>Dev</li> */}
-          {/* <li onClick={handleFilterKeyChange('design')}>Design</li> */}
           <button onClick={handleFilterKeyChange('design')}>Design</button>
-          {/* <li onClick={handleFilterKeyChange('other')}>Other</li> */}
           <button onClick={handleFilterKeyChange('other')}>Other</button>
         </div>
 
         <hr />
         <ul className="filter-container">
-          <div className="filter-item other">
-          <img src={crystal} alt="Crystal Reports"/>
-          </div>
           <div className="filter-item dev">
-          <img src={jetreports} alt="CSS"/>
+            <img src={bootstrap} alt="Bootstrap"/>
           </div>
           <div className="filter-item other">
-          <img src={excel} alt="Excel"/>
+            <img src={cakewalk} alt="Cakewalk"/>
+          </div>
+          <div className="filter-item other">
+            <img src={crystal} alt="Crystal Reports"/>
+          </div>
+          <div className="filter-item dev fave">
+            <img src={css} alt="CSS"/>
+          </div>
+          <div className="filter-item other fave">
+            <img src={excel} alt="Excel"/>
           </div>
           <div className="filter-item dev">
-          <img src={git} alt="Git"/>
+            <img src={git} alt="Git"/>
           </div>
           <div className="filter-item dev">
-          <img src={gulp} alt="Gulp"/>
+            <img src={gulp} alt="Gulp"/>
           </div>
-          <div className="filter-item dev">
+          <div className="filter-item dev fave">
             <img src={HTML} alt="html"/>
           </div>
-          <div className="filter-item design">
-          <img src={illustrator} alt="Illustrator"/>
+          <div className="filter-item design fave">
+            <img src={illustrator} alt="Illustrator"/>
           </div>
           <div className="filter-item dev">
-          <img src={javascript} alt="JavaScript"/>
+            <img src={javascript} alt="JavaScript"/>
           </div>
           <div className="filter-item other">
-          <img src={jetreports} alt="Jet Reports"/>
+            <img src={jetreports} alt="Jet Reports"/>
           </div>
           <div className="filter-item dev">
-          <img src={jquery} alt="jQuery"/>
+            <img src={jquery} alt="jQuery"/>
           </div>
-          <div className="filter-item design">
-          <img src={photoshop} alt="Photoshop"/>
+          <div className="filter-item design fave">
+            <img src={photoshop} alt="Photoshop"/>
           </div>
-          <div className="filter-item dev">
-          <img src={php} alt="PHP"/>
-          </div>
-          <div className="filter-item dev">
-          <img src={sass} alt="SASS"/>
+          <div className="filter-item dev fave">
+            <img src={php} alt="PHP"/>
           </div>
           <div className="filter-item dev">
-          <img src={shopify} alt="Shopify"/>
+            <img src={react} alt="React"/>
           </div>
           <div className="filter-item dev">
-          <img src={sql} alt="SQL"/>
+            <img src={sass} alt="SASS"/>
           </div>
           <div className="filter-item dev">
-          <img src={vscode} alt="VS Code"/>
+            <img src={shopify} alt="Shopify"/>
           </div>
           <div className="filter-item dev">
-          <img src={woocommerce} alt="WooCommerce"/>
+            <img src={sql} alt="SQL"/>
           </div>
-          <div className="filter-item dev">
-          <img src={wordpress} alt="WordPress"/>
+          <div className="filter-item dev fave">
+            <img src={vscode} alt="VS Code"/>
           </div>
-          <div className="filter-item design">
-          <img src={xd} alt="XD"/>
+          <div className="filter-item dev fave">
+            <img src={woocommerce} alt="WooCommerce"/>
+          </div>
+          <div className="filter-item dev fave">
+            <img src={wordpress} alt="WordPress"/>
+          </div>
+          <div className="filter-item design fave">
+            <img src={xd} alt="XD"/>
           </div>
 
         </ul>
