@@ -4,6 +4,16 @@
     display: none;
     background-color: variables.$honolulu;
 
+    // .copyright-info{
+    //     p{
+    //         display:none;
+    //     }
+    // }
+    
+    ul{
+        list-style: none;
+    }
+
     @media screen and (min-width: 700px){
         position:fixed;
         top: 0;
@@ -12,6 +22,7 @@
         width: 70px;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         /* z-index: 200; */
         background-color: #0076B6;
         list-style: none;
@@ -20,11 +31,10 @@
         transition:width .3s linear;
         -webkit-transform:translateZ(0) scale(1,1);
         z-index:1000;
-
     }
 }
 
-.navbar:hover,nav.main-menu.expanded {
+.navbar:hover,nav.main-menu.expanded{
     width:150px;
     overflow:visible;
     }

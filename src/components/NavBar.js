@@ -32,9 +32,7 @@ function NavBar() {
                 alt="Logo"
                 />
         </NavHashLink>
-
-
-        
+   
         <ul>
             <li>
                 <NavHashLink smooth to="/#top" >
@@ -58,7 +56,10 @@ function NavBar() {
             </li>
             {/* <li><NavHashLink to="/project">Ind.Project</NavHashLink></li> */}
         </ul>
-        <p>&copy; 2022 Adam H.</p>
+        <div className="copyright-info">
+            <p>&copy; 2022 Adam H.</p>
+        </div>
+        
     </nav>
 
   )
