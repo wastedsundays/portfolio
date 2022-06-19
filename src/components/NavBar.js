@@ -24,7 +24,7 @@ function NavBar() {
   return (
     <nav className='navbar'>
 
-        <NavHashLink smooth to='#top'>
+        <NavHashLink smooth to='/#top'>
             <img
                 src={Logo}
                 className="nav-logo"

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -87,7 +88,7 @@ function TabPanel(props) {
                 <Tab label="Movie Database" {...a11yProps(1)} />
                 <Tab label="Capstone Project" {...a11yProps(2)} />
                 <Tab label="Portfolio Site" {...a11yProps(3)} />
-                <Tab label="Example Tab" {...a11yProps(4)} />
+                <Tab label="Example Tab Link" {...a11yProps(4)} />
                 <Tab label="Example Tab 2" {...a11yProps(5)} />
                 <Tab label="Example Tab 3" {...a11yProps(6)} />
                 <Tab label="Example Tab 4" {...a11yProps(7)} />
@@ -126,12 +127,7 @@ function TabPanel(props) {
             </TabPanel>
 
             <TabPanel value={value} index={4}>
-              Portfolio Project content from Wordpress API custom post type "Projects"
-              Portfolio Project content from Wordpress API custom post type "Projects"
-              Portfolio Project content from Wordpress API custom post type "Projects"
-              Portfolio Project content from Wordpress API custom post type "Projects"
-              Portfolio Project content from Wordpress API custom post type "Projects"
-              Portfolio Project content from Wordpress API custom post type "Projects"
+            <NavLink to="/project">Link to /project page</NavLink>
               
             </TabPanel>
             <TabPanel value={value} index={5}>

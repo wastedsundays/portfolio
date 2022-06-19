@@ -4,8 +4,8 @@ import ReactSwitch from 'react-switch';
 // import '../scss/styles.scss';
 
 import MainPage from '../pages/MainPage';
-// import ProjectPage from '../pages/ProjectPage';
-// import Page404 from '../pages/Page404';
+import ProjectPage from '../pages/ProjectPage';
+import Page404 from '../pages/Page404';
 import NavBar from '../components/NavBar';
 import BottomNav from '../components/BottomNav';
 import ModeNightIcon from '@mui/icons-material/ModeNight';
@@ -69,8 +69,8 @@ function App() {
             <div className='content-area'>
               <Routes>
                   <Route path='/' element={<MainPage />} />
-                  {/* <Route path='/project' element={<ProjectPage />} />
-                  <Route path='*' element={<Page404 />} />   */}
+                  <Route path='/project' element={<ProjectPage />} />
+                  <Route path='*' element={<Page404 />} />  
               </Routes> 
             </div>
             
