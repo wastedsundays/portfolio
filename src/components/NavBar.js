@@ -3,6 +3,7 @@ import { NavHashLink } from 'react-router-hash-link';
 
 
 import Logo from '../images/ah-logo-white.svg';
+import HomeIcon from '@mui/icons-material/Home';
 import PersonIcon from '@mui/icons-material/Person';
 import DevicesIcon from '@mui/icons-material/Devices';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
@@ -35,6 +36,11 @@ function NavBar() {
 
         
         <ul>
+            <li>
+                <NavHashLink smooth to="/#top" >
+                <HomeIcon />
+                </NavHashLink>
+            </li>
             <li>
                 <NavHashLink smooth to='/#about'>
                 <PersonIcon />

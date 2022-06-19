@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { NavHashLink } from 'react-router-hash-link';
 
 // import Logo from "../images/ah-logo-white.svg";
@@ -15,7 +15,7 @@ function BottomNav() {
     <nav className="bottom-nav">
         <ul>
           <li>
-            <NavHashLink smooth to="#top" >
+            <NavHashLink smooth to="/#top" >
               <HomeIcon />
               <p>Home</p>
             </NavHashLink>
