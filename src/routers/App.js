@@ -52,6 +52,7 @@ function App() {
                         checked={theme === 'dark'} 
                         onColor="#333" 
                         offColor="#fff"
+                        onHandleColor="#333"
                         checkedIcon={false} 
                         uncheckedIcon={false}
                         height={25}
@@ -76,7 +77,7 @@ function App() {
                               justifyContent: "center",
                               alignItems: "center",
                               height: "100%",
-                              color: "black",
+                              color: "#0076B6",
                               fontSize: 18
                             }}
                           >
