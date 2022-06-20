@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Isotope from 'isotope-layout';
-import Loop from './Loop';
 
 import bootstrap from '../skills/skill-icon-bootstrap.png';
 import cakewalk from '../skills/skill-icon-cakewalk.png';
@@ -66,6 +65,7 @@ const IsotopeReact = () => {
 
         <hr />
 
+        
         <ul className="filter-container">
           <div className="filter-item dev">
             <img src={bootstrap} alt="Bootstrap"/>
