@@ -29,42 +29,9 @@ function App() {
               
         <BrowserRouter>
           <NavBar />
-          <ReactSwitch  onChange={toggleTheme} 
-                        checked={theme === 'dark'} 
-                        onColor="#333" 
-                        offColor="#fff"
-                        checkedIcon={false} 
-                        uncheckedIcon={false}
-                        height={30}
-                        width={70}
-                        uncheckedHandleIcon={
-                          <div
-                            style={{
-                              display: "flex",
-                              justifyContent: "center",
-                              alignItems: "center",
-                              height: "100%",
-                              fontSize: 20
-                            }}
-                          >
-                            <ModeNightIcon />
-                          </div>
-                          }
-                          checkedHandleIcon={
-                            <div
-                              style={{
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                height: "100%",
-                                color: "black",
-                                fontSize: 18
-                              }}
-                            >
-                              <LightModeIcon />
-                            </div>
-                            }
-            />
+
+
+
 
             <div className='content-area'>
               <Routes>
@@ -78,7 +45,49 @@ function App() {
             
           <BottomNav />
           
-        </BrowserRouter>    
+        </BrowserRouter>   
+
+        <div className="lightswitch">
+          <ReactSwitch  onChange={toggleTheme} 
+                        checked={theme === 'dark'} 
+                        onColor="#333" 
+                        offColor="#fff"
+                        checkedIcon={false} 
+                        uncheckedIcon={false}
+                        height={25}
+                        width={30}
+                        uncheckedHandleIcon={
+                          <div 
+                            style={{
+                              display: "flex",
+                              justifyContent: "center",
+                              alignItems: "center",
+                              height: "100%",
+                              fontSize: 20
+                            }}
+                            >
+                            <ModeNightIcon />
+                          </div>
+                          }
+                        checkedHandleIcon={
+                          <div
+                            style={{
+                              display: "flex",
+                              justifyContent: "center",
+                              alignItems: "center",
+                              height: "100%",
+                              color: "black",
+                              fontSize: 18
+                            }}
+                          >
+                            <LightModeIcon />
+                          </div>
+                           }
+            />
+          </div>
+
+
+
       </div>
     </ThemeContext.Provider>
   )

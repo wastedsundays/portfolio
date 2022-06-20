@@ -5,6 +5,8 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 
+import Loading from './Loading';
+
 import { useState, useEffect } from 'react'
 
 
@@ -153,7 +155,8 @@ function TabPanel(props) {
           </Box>
         </>
         :
-        <h1>Please wait...</h1>
+        <Loading />
+        // <h1>Please wait...</h1>
       }
         </>
     );

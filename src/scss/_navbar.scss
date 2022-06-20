@@ -50,10 +50,19 @@
     }
 }
 
+.lightswitch {
+    // visibility: hidden;
+    position: fixed;
+    top: 3px;
+    left: 10px;
+    z-index: 99999;
+}
+
 .navbar:hover,nav.main-menu.expanded{
     width:150px;
     overflow:visible;
-    }
+
+}
 
 
 
@@ -65,6 +74,7 @@
 }
 
 .navbar:hover{
+
     .navbar-text, .nav-button{
         p{
             visibility: visible;
@@ -77,3 +87,4 @@
     align-items: center;
     color: variables.$white;
 }
+
