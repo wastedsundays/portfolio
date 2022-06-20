@@ -36,27 +36,40 @@ function NavBar() {
         <ul>
             <li>
                 <NavHashLink smooth to="/#top" >
-                <HomeIcon />
+                    <div className="nav-button">
+                        <HomeIcon />
+                        <p>Home</p>
+                    </div>
+
                 </NavHashLink>
             </li>
             <li>
                 <NavHashLink smooth to='/#about'>
-                <PersonIcon />
+                    <div className="nav-button">
+                        <PersonIcon />
+                        <p>About</p>
+                    </div>
                 </NavHashLink>
             </li>
             <li>
                 <NavHashLink smooth to='/#projects'>
-                <DevicesIcon />
+                    <div className="nav-button">
+                        <DevicesIcon />
+                        <p>Projects</p>
+                    </div>
                 </NavHashLink>
             </li>
             <li>
                 <NavHashLink smooth to='/#contact'>
-            <AlternateEmailIcon />
-            </NavHashLink>
+                    <div className="nav-button">
+                        <AlternateEmailIcon />
+                        <p>Contact</p>
+                    </div>
+                </NavHashLink>
             </li>
             {/* <li><NavHashLink to="/project">Ind.Project</NavHashLink></li> */}
         </ul>
-        <div className="copyright-info">
+        <div className="navbar-text">
             <p>&copy; 2022 Adam H.</p>
         </div>
         

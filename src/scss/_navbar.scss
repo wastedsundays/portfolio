@@ -3,15 +3,22 @@
 .navbar{
     display: none;
     background-color: variables.$honolulu;
+    color: variables.$white;
+    text-align: center;
 
-    // .copyright-info{
-    //     p{
-    //         display:none;
-    //     }
-    // }
+    .nav-logo{
+        width: 55px;
+        padding: 5px;
+        text-align: right;
+    }
+
+    svg{
+        padding-right: 12px;
+    }
     
     ul{
         list-style: none;
+        padding-left: 20px;
     }
 
     @media screen and (min-width: 700px){
@@ -39,6 +46,24 @@
     overflow:visible;
     }
 
-.nav-logo{
-    width: 55px;
+
+
+.navbar-text, .nav-button {
+    p{
+        visibility: hidden;
+        white-space: nowrap;
+    }
+}
+
+.navbar:hover{
+    .navbar-text, .nav-button{
+        p{
+            visibility: visible;
+        }
+    }
+}
+
+.nav-button{
+    display: flex;
+    align-items: center;
 }

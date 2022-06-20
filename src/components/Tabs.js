@@ -127,16 +127,13 @@ function TabPanel(props) {
             </TabPanel>
 
             <TabPanel value={value} index={4}>
-            <NavLink to="/project">Link to /project page</NavLink>
+            <NavLink to="/project-details">Link to details page</NavLink>
               
             </TabPanel>
             <TabPanel value={value} index={5}>
-              Portfolio Project content from Wordpress API custom post type "Projects"
-              Portfolio Project content from Wordpress API custom post type "Projects"
-              Portfolio Project content from Wordpress API custom post type "Projects"
-              Portfolio Project content from Wordpress API custom post type "Projects"
-              Portfolio Project content from Wordpress API custom post type "Projects"
-              Portfolio Project content from Wordpress API custom post type "Projects"
+            <div><NavLink to="/audio">Link to audio projects page</NavLink></div>
+
+            <div><NavLink to="/logos">Link to logo and artwork page</NavLink></div>
               
             </TabPanel>
             <TabPanel value={value} index={6}>

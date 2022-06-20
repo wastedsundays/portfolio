@@ -5,6 +5,8 @@ import ReactSwitch from 'react-switch';
 
 import MainPage from '../pages/MainPage';
 import ProjectPage from '../pages/ProjectPage';
+import AudioPage from '../pages/AudioPage';
+import LogoPage from '../pages/LogoPage';
 import Page404 from '../pages/Page404';
 import NavBar from '../components/NavBar';
 import BottomNav from '../components/BottomNav';
@@ -69,7 +71,9 @@ function App() {
             <div className='content-area'>
               <Routes>
                   <Route path='/' element={<MainPage />} />
-                  <Route path='/project' element={<ProjectPage />} />
+                  <Route path='/project-details' element={<ProjectPage />} />
+                  <Route path='/audio' element={<AudioPage />} />
+                  <Route path='/logos' element={<LogoPage />} />
                   <Route path='*' element={<Page404 />} />  
               </Routes> 
             </div>

@@ -2,7 +2,10 @@ import React from 'react'
 
 function ProjectPage() {
   return (
-    <p>test</p>
+    <section>
+      <p>test</p>
+    </section>
+    
     
   )
 }
