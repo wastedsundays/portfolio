@@ -25,7 +25,7 @@ if (error) {
     } else {
         return (
             <ul className="filter-container">
-            
+        
                 {users.map(user => (
                     <div key={user.id} className={`filter-item ${user.acf.classname}`}>
                         <img src={user.acf.image} alt={user.acf.alt} />
