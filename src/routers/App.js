@@ -1,7 +1,6 @@
 import { createContext, useState, useEffect } from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import ReactSwitch from 'react-switch';
-// import '../scss/styles.scss';
 
 import MainPage from '../pages/MainPage';
 import ProjectPage from '../pages/ProjectPage';
@@ -12,9 +11,8 @@ import NavBar from '../components/NavBar';
 import BottomNav from '../components/BottomNav';
 import ModeNightIcon from '@mui/icons-material/ModeNight';
 import LightModeIcon from '@mui/icons-material/LightMode';
+
 export const ThemeContext = createContext(null);
-
-
 
 function App() {
 

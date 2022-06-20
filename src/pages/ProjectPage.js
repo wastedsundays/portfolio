@@ -3,7 +3,7 @@ import React from 'react'
 function ProjectPage() {
   return (
     <section>
-      <p>test</p>
+      <h1>Individual Project Page</h1>
     </section>
     
     
