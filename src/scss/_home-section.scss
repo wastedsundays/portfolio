@@ -57,3 +57,26 @@
           }
       }
 }
+
+@media screen and (min-width: 700px){
+    .home-section {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .heroinfo, .heroimage {
+        flex-grow: 2;
+    }
+
+    .heroimage{
+        img{
+            margin: 0 0 0 auto;
+        }
+    }
+
+    .heroinfo{
+        text-align: left;
+    }
+}
