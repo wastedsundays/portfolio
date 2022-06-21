@@ -1,9 +1,9 @@
 .content-area{
-    padding: 0 .6rem;
+    padding: 0 2rem;
 
-    @media screen and (min-width: 700px){
+    @media screen and (min-width: 800px){
         display: grid;
-        grid-template-columns: minmax(30px, 1fr) minmax(420px, 1100px) minmax(30px, 1fr) 150px;
+        grid-template-columns: minmax(30px, 1fr) minmax(420px, 1000px) minmax(30px, 1fr) 150px;
 
         .grid-align{
             grid-column-start: 2;
