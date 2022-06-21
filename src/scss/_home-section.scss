@@ -2,8 +2,11 @@
 
 
 .home-section{
-    
+    padding-top: 1px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
     img{
         width: 50%;
@@ -67,7 +70,8 @@
     }
     
     .heroinfo, .heroimage {
-        flex-grow: 2;
+        // flex-grow: 2;
+        width: 50%;
     }
 
     .heroimage{

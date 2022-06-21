@@ -8,7 +8,7 @@ function HomeSection() {
         <div className='heroinfo'>        
           <h1>Adam H</h1>
           <p className='subheading'>Front End Web Developer</p>
-          <p>Ipsume Dipsum Tripsum</p>
+          <p>A bunch of text goes here. Currently it's just filling space. Ideally, Something incredibly intelligent would go here. But, uh....</p>
         </div>
 
         <figure className='heroimage'>
