@@ -107,6 +107,11 @@ function TabPanel(props) {
               <p>{restData.acf.project_feature}</p>
               <div>
                 <button>
+                  <NavLink to="/project-details">See More</NavLink>
+                </button>
+              </div>
+              <div>
+                <button>
                   <a href={restData.acf.link_to_live_site}>Try It</a>
                 </button>
               </div>
