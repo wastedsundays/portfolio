@@ -1,7 +1,11 @@
 const Loading = () => {
     
     return (
-        <img src="spinning-record.gif" alt="Loading" className="loading" id="loading" />
+        <div class="loading-image">
+            <div class="player_one"></div>
+            <div class="player_two"></div>
+            <div class="ball"></div>
+        </div>
     )
 
 }
