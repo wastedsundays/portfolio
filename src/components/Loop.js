@@ -28,7 +28,7 @@ if (error) {
         
                 {users.map(user => (
                     <div key={user.id} className={`filter-item ${user.title.rendered}`}>
-                        <p>{user.title.rendered} {user.id}</p>
+                        <p>{user.title.rendered} {user.id} {user.slug}</p>
                     </div>
                 ))}
             </ul>
