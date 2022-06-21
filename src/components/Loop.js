@@ -5,7 +5,7 @@ function Loop() {
     const [isLoaded, setIsLoaded] = useState(false);
     const [users, setUsers] = useState([]);
     useEffect(() => {
-        fetch("https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/tools-tx?acf_format=standard")
+        fetch("https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/fwd-projects?acf_format=standard")
             .then(res => res.json())
             .then(
                 (data) => {
@@ -27,12 +27,9 @@ if (error) {
             <ul className="filter-container">
         
                 {users.map(user => (
-                    <div key={user.id} className={`filter-item ${user.acf.classname}`}>
-                        <img src={user.acf.image} alt={user.acf.alt} />
+                    <div key={user.id} className={`filter-item ${user.title.rendered}`}>
+                        <p>{user.title.rendered}</p>
                     </div>
-                // <li key={user.id}>
-                //      <img className={user.acf.classname} src={user.acf.image} alt=""/>
-                // </li>
                 ))}
             </ul>
         );
