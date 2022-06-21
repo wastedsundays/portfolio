@@ -1,10 +1,12 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import { useParams } from "react-router-dom";
 // import Loop from '../components/Loop'
 
 function ProjectPage() {
-
-  const restPath = `https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/fwd-projects/70?acf_format=standard`
+  const { id } = useParams()
+  const restPath = `https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/fwd-projects/${id}?acf_format=standard`
+  
     
   const [restData, setData] = useState([])    
   const [isLoaded, setLoadStatus] = useState(false)

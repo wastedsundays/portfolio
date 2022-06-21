@@ -52,7 +52,7 @@ function TabPanel(props) {
     };
   
   
-    const restPath = 'https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/fwd-projects/70?acf_format=standard'
+    const restPath = 'https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/fwd-projects/143?acf_format=standard'
     
     const [restData, setData] = useState([])    
     const [isLoaded, setLoadStatus] = useState(false)
