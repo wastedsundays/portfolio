@@ -52,10 +52,10 @@ function TabPanel(props) {
     };
   
   
-    const restPath = 'https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/fwd-projects/70?acf_format=standard'
+    const restPath = 'https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/fwd-projects?acf_format=standard'
     
     const [restData, setData] = useState([])    
-    const [isLoaded, setLoadStatus] = useState(false)
+    const [isLoaded, setIsLoaded] = useState(false)
   
   
     useEffect(() => {
@@ -63,16 +63,17 @@ function TabPanel(props) {
             const response = await fetch(restPath)
             if ( response.ok ) {
                 const data = await response.json()
+                console.log(data);
                 setData(data)
-                setLoadStatus(true)
+                setIsLoaded(true)
             } else {
-                setLoadStatus(false)
+                setIsLoaded(false)
             }
         }
         fetchData()
     }, [restPath])
 
-    console.log(restData);
+    
   
     return (
       <>
@@ -80,7 +81,43 @@ function TabPanel(props) {
         <>
           <Box sx={{ width: '100%' }}>
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-              <Tabs   value={value} 
+
+            {setIsLoaded && 
+              <Tabs value={value} 
+                    onChange={handleChange} 
+              // centered={true}
+                    variant="scrollable"
+                    scrollButtons 
+                    allowScrollButtonsMobile 
+                    aria-label="basic tabs example">
+                  {restData.map((proj, i) => <Tab label={proj.title.rendered} key={proj.id} {...a11yProps(i)} />)}
+
+              </Tabs> }
+{/* 
+                {restData.map((proj2, i) => 
+                <TabPanel value={value} key={proj2.id} index={i} />)} */}
+
+            {restData.map((proj2, i) =>
+            <TabPanel value={value} index={i}>
+              <p>{proj2.title.rendered}</p>
+              <img
+                  src={proj2.acf.project_featured_image}
+                  className="featured-image"
+                  alt={`${proj2.title.rendered} screenshot`}
+                  />
+              <div>
+                <button>
+                  <NavLink to={`/project-details/${proj2.id}`}>See More</NavLink>
+                </button>
+              </div>
+
+            </TabPanel>)}
+              
+
+
+
+
+              {/* <Tabs   value={value} 
                     onChange={handleChange} 
                     // centered={true}
                     variant="scrollable"
@@ -94,11 +131,11 @@ function TabPanel(props) {
                 <Tab label="Portfolio Site" {...a11yProps(3)} />
                 <Tab label="Example Tab Link" {...a11yProps(4)} />
                 <Tab label="Example Tab 2" {...a11yProps(5)} />
-              </Tabs>
+              </Tabs> */}
             </Box>
 
             {/* Tab Content  */}
-            <TabPanel value={value} index={0}>
+            {/* <TabPanel value={value} index={0}>
 
               <img
                   src={restData.acf.project_featured_image}
@@ -143,7 +180,7 @@ function TabPanel(props) {
 
             <div><NavLink to="/logos">Link to logo and artwork page</NavLink></div>
               
-            </TabPanel>
+            </TabPanel> */}
 
           </Box>
         </>
