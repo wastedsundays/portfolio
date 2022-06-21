@@ -52,7 +52,7 @@ function TabPanel(props) {
     };
   
   
-    const restPath = 'https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/fwd-projects/143?acf_format=standard'
+    const restPath = 'https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/fwd-projects/70?acf_format=standard'
     
     const [restData, setData] = useState([])    
     const [isLoaded, setLoadStatus] = useState(false)
@@ -71,6 +71,8 @@ function TabPanel(props) {
         }
         fetchData()
     }, [restPath])
+
+    console.log(restData);
   
     return (
       <>
@@ -85,6 +87,7 @@ function TabPanel(props) {
                     scrollButtons 
                     allowScrollButtonsMobile 
                     aria-label="basic tabs example">
+
                 <Tab label={restData.title.rendered} {...a11yProps(0)} />
                 <Tab label="Movie Database" {...a11yProps(1)} />
                 <Tab label="Capstone Project" {...a11yProps(2)} />
@@ -96,7 +99,7 @@ function TabPanel(props) {
 
             {/* Tab Content  */}
             <TabPanel value={value} index={0}>
-              {/* {restData.link} */}
+
               <img
                   src={restData.acf.project_featured_image}
                   className="featured-image"
@@ -134,6 +137,7 @@ function TabPanel(props) {
             <NavLink to="/project-details">Link to details page</NavLink>
               
             </TabPanel>
+
             <TabPanel value={value} index={5}>
             <div><NavLink to="/audio">Link to audio projects page</NavLink></div>
 
