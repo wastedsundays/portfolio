@@ -26,7 +26,7 @@ function ProjectPage() {
       fetchData()
   }, [restPath])
 
-  
+
   return (
     <>
     { isLoaded ?
