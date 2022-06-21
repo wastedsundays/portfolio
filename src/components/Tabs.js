@@ -92,9 +92,6 @@ function TabPanel(props) {
                 <Tab label="Portfolio Site" {...a11yProps(3)} />
                 <Tab label="Example Tab Link" {...a11yProps(4)} />
                 <Tab label="Example Tab 2" {...a11yProps(5)} />
-                <Tab label="Example Tab 3" {...a11yProps(6)} />
-                <Tab label="Example Tab 4" {...a11yProps(7)} />
-
               </Tabs>
             </Box>
 
@@ -104,10 +101,20 @@ function TabPanel(props) {
               <img
                   src={restData.acf.project_featured_image}
                   className="featured-image"
-                  alt="Logo"
+                  alt={`${restData.title.rendered} screenshot`}
                   />
               <p>{restData.acf.project_description}</p>
               <p>{restData.acf.project_feature}</p>
+              <div>
+                <button>
+                  <a href={restData.acf.link_to_live_site}>Try It</a>
+                </button>
+              </div>
+              <div>
+                <button>
+                  <a href={restData.acf.link_to_repo}>Git Repo</a>
+                </button>
+              </div>
             </TabPanel>
 
             <TabPanel value={value} index={1}>
@@ -138,20 +145,7 @@ function TabPanel(props) {
             <div><NavLink to="/logos">Link to logo and artwork page</NavLink></div>
               
             </TabPanel>
-            <TabPanel value={value} index={6}>
-              Portfolio Project content from Wordpress API custom post type "Projects"
-              Portfolio Project content from Wordpress API custom post type "Projects"
-              Portfolio Project content from Wordpress API custom post type "Projects"
-              Portfolio Project content from Wordpress API custom post type "Projects"
-              Portfolio Project content from Wordpress API custom post type "Projects"
-              Portfolio Project content from Wordpress API custom post type "Projects"
-              
-            </TabPanel>
-            <TabPanel value={value} index={7}>
-              Portfolio Project content from Wordpress API custom post type "Projects"
-              Portfolio Project content from Wordpress API custom post type "Projects"
-              
-            </TabPanel>
+
           </Box>
         </>
         :
