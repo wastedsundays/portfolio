@@ -47,6 +47,8 @@ function ProjectPage() {
             <a href={restData.acf.link_to_repo}>Git Repo</a>
           </button>
         </div>
+        <img src={restData.acf.project_image_1} alt=""/>
+        <img src={restData.acf.project_image_2} alt=""/>
 
       </div>
       
