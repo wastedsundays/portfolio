@@ -106,7 +106,7 @@ function TabPanel(props) {
               <p>{restData.acf.project_feature}</p>
               <div>
                 <button>
-                  <NavLink to={`/project-details/${restData.slug}`}>See More</NavLink>
+                  <NavLink to={`/project-details/${restData.id}`}>See More</NavLink>
                 </button>
               </div>
 
