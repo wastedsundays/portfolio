@@ -64,7 +64,7 @@ function App() {
                               justifyContent: "center",
                               alignItems: "center",
                               height: "100%",
-                              fontSize: 20
+                              fontSize: 18
                             }}
                             >
                             <ModeNightIcon />

@@ -5,12 +5,13 @@
     padding-top: 1px;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     
     img{
-        width: 50%;
+        width: 95%;
         max-width: 250px;
+        // min-width: 180px;
         display: block;
         margin: 0 auto;
         border-radius: 10px;
@@ -69,12 +70,13 @@
         align-items: center;
     }
     
-    .heroinfo, .heroimage {
-        // flex-grow: 2;
-        width: 50%;
-    }
+    // .heroinfo, .heroimage {
+    //     // flex-grow: 2;
+    //     width: 50%;
+    // }
 
     .heroimage{
+        // width: 25%;
         img{
             margin: 0 0 0 auto;
         }

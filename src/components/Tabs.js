@@ -110,16 +110,7 @@ function TabPanel(props) {
                   <NavLink to="/project-details">See More</NavLink>
                 </button>
               </div>
-              <div>
-                <button>
-                  <a href={restData.acf.link_to_live_site}>Try It</a>
-                </button>
-              </div>
-              <div>
-                <button>
-                  <a href={restData.acf.link_to_repo}>Git Repo</a>
-                </button>
-              </div>
+
             </TabPanel>
 
             <TabPanel value={value} index={1}>
