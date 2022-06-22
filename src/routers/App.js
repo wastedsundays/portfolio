@@ -16,20 +16,18 @@ import LightModeIcon from '@mui/icons-material/LightMode';
 export const ThemeContext = createContext(null);
 
 function App() {
-
+  
   useEffect(() => {
     document.title = "Adam H. - Front End Web Developer"
- }, []);
+  }, []);
+  const [theme, setTheme] = useState(localStorage.getItem('userTheme') ? localStorage.getItem('userTheme') : "light");
   // const [theme, setTheme] = useState('light');
-
-  const [theme, setTheme] = useState(JSON.parse(localStorage.getItem('userTheme'))
-  );
-   const toggleTheme = () => {
+  const toggleTheme = () => {
     setTheme((curr) =>(curr === 'light' ? 'dark' : 'light'))
   };
 
   useEffect(() => {
-    localStorage.setItem('userTheme', JSON.stringify(theme));
+    localStorage.setItem('userTheme', (theme));
   }, [theme]);
 
   return (
