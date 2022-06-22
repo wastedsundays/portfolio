@@ -21,6 +21,7 @@ function App() {
     document.title = "Adam H. - Front End Web Developer"
  }, []);
   // const [theme, setTheme] = useState('light');
+
   const [theme, setTheme] = useState(JSON.parse(localStorage.getItem('userTheme'))
   );
    const toggleTheme = () => {
