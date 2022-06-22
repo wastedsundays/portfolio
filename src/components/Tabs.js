@@ -98,7 +98,7 @@ function TabPanel(props) {
                 <TabPanel value={value} key={proj2.id} index={i} />)} */}
 
             {restData.map((proj2, i) =>
-            <TabPanel value={value} index={i}>
+            <TabPanel value={value} index={i} key={proj2.id}>
               <p>{proj2.title.rendered}</p>
               <img
                   src={proj2.acf.project_featured_image}
