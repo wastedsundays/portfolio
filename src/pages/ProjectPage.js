@@ -54,12 +54,15 @@ function ProjectPage() {
         <img src={restData.acf.project_image_1} alt=""/>
         <img src={restData.acf.project_image_2} alt=""/>
 
+
       </div>
       
 
       :
 
-      <p>bye</p>
+      <section className='loading'>
+        <p>bye</p>
+      </section>
     }
     </>
 
