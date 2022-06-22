@@ -8,6 +8,7 @@ import AudioPage from '../pages/AudioPage';
 import LogoPage from '../pages/LogoPage';
 import Page404 from '../pages/Page404';
 import NavBar from '../components/NavBar';
+import HeaderBar from '../components/HeaderBar';
 import BottomNav from '../components/BottomNav';
 import ModeNightIcon from '@mui/icons-material/ModeNight';
 import LightModeIcon from '@mui/icons-material/LightMode';
@@ -19,10 +20,17 @@ function App() {
   useEffect(() => {
     document.title = "Adam H. - Front End Web Developer"
  }, []);
-  const [theme, setTheme] = useState('light');
-  const toggleTheme = () => {
+  // const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState(JSON.parse(localStorage.getItem('userTheme'))
+  );
+   const toggleTheme = () => {
     setTheme((curr) =>(curr === 'light' ? 'dark' : 'light'))
   };
+
+  useEffect(() => {
+    localStorage.setItem('userTheme', JSON.stringify(theme));
+  }, [theme]);
+
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className='main' id={theme}>
@@ -46,7 +54,7 @@ function App() {
           <BottomNav />
           
         </BrowserRouter>   
-
+        <HeaderBar />
         <div className="lightswitch">
           <ReactSwitch  onChange={toggleTheme} 
                         checked={theme === 'dark'} 

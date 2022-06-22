@@ -4,7 +4,16 @@
 #light {
     color: variables.$mineshaft;
     background-color: variables.$white;
+
+    .headerbar{
+      background-color: rgba(variables.$white,.55);
+    }
   }
+
+
+
+
+
 
   #dark {
     background-color: variables.$mineshaft;
@@ -14,6 +23,10 @@
       color: variables.$cerulian;
     }
 
+    }
+
+    .headerbar{
+      background-color: rgba(variables.$mineshaft,.45);
     }
   
 
