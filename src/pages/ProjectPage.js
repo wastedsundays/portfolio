@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
+import HeaderBar from '../components/HeaderBar';
 // import Loop from '../components/Loop'
 
 function ProjectPage() {
@@ -29,6 +30,7 @@ function ProjectPage() {
 
   return (
     <>
+    <HeaderBar />
     { isLoaded ?
       <div className='project-home-section'>
         <img
