@@ -5,8 +5,10 @@ import HeaderBar from '../components/HeaderBar';
 // import Loop from '../components/Loop'
 
 function ProjectPage() {
-  const { id } = useParams()
-  const restPath = `https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/fwd-projects/${id}?acf_format=standard`
+  // const { id } = useParams()
+  const { slug } = useParams()
+  // const restPath = `https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/fwd-projects/${id}?acf_format=standard`
+  const restPath = `https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/fwd-projects?acf_format=standard&slug=${ slug }`
   
     
   const [restData, setData] = useState([])    
@@ -33,29 +35,32 @@ function ProjectPage() {
     <HeaderBar />
     { isLoaded ?
       <div className='project-home-section'>
-        <img
-          src={restData.acf.project_featured_image}
+        {/* <p>{restData[0].id}</p> */}
+         <img
+          src={restData[0].acf.project_featured_image}
           className="featured-image"
-          alt={`${restData.title.rendered} screenshot`}
+          alt={`${restData[0].title.rendered} screenshot`}
         />
-        <h2>{restData.title.rendered}</h2>
-        <p>{restData.acf.project_description}</p>
-        <p>{restData.acf.project_feature}</p>
+        
+        <h2>{restData[0].title.rendered}</h2>
+        <p>{restData[0].acf.project_description}</p>
+        <p>{restData[0].acf.project_feature}</p>
+     
         <div>
           <button>
-            <a href={restData.acf.link_to_live_site}>Try It</a>
+            <a href={restData[0].acf.link_to_live_site}>Try It</a>
           </button>
         </div>
         <div>
           <button>
-            <a href={restData.acf.link_to_repo}>Git Repo</a>
+            <a href={restData[0].acf.link_to_repo}>Git Repo</a>
           </button>
         </div>
-        <img src={restData.acf.project_image_1} alt=""/>
-        <img src={restData.acf.project_image_2} alt=""/>
+        <img src={restData[0].acf.project_image_1} alt=""/>
+        <img src={restData[0].acf.project_image_2} alt=""/> 
 
 
-      </div>
+      </div> 
       
 
       :

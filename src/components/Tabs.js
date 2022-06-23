@@ -97,7 +97,7 @@ const [isLoaded, setIsLoaded] = useState(false)
                       />
                     <div>
                       <button>
-                        <NavLink to={`/project-details/${proj2.id}`}>See More</NavLink>
+                        <NavLink to={`/project-details/${proj2.slug}`}>See More</NavLink>
                       </button>
                     </div>
                   </TabPanel>)}
