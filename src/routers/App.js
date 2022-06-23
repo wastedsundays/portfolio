@@ -20,14 +20,14 @@ function App() {
   useEffect(() => {
     document.title = "Adam H. - Front End Web Developer"
   }, []);
-  const [theme, setTheme] = useState(localStorage.getItem('userTheme') ? localStorage.getItem('userTheme') : "light");
+  const [theme, setTheme] = useState(localStorage.getItem('adamhPortfolio') ? localStorage.getItem('adamhPortfolio') : "light");
   // const [theme, setTheme] = useState('light');
   const toggleTheme = () => {
     setTheme((curr) =>(curr === 'light' ? 'dark' : 'light'))
   };
 
   useEffect(() => {
-    localStorage.setItem('userTheme', (theme));
+    localStorage.setItem('adamhPortfolio', (theme));
   }, [theme]);
 
   return (
@@ -36,10 +36,6 @@ function App() {
               
         <BrowserRouter>
           <NavBar />
-
-
-
-
             <div className='content-area'>
               <Routes>
                   <Route path='/' element={<MainPage />} />
@@ -63,7 +59,7 @@ function App() {
                         checkedIcon={false} 
                         uncheckedIcon={false}
                         height={25}
-                        width={30}
+                        width={50}
                         uncheckedHandleIcon={
                           <div 
                             style={{
@@ -71,6 +67,7 @@ function App() {
                               justifyContent: "center",
                               alignItems: "center",
                               height: "100%",
+                              color: "#0076B6",
                               fontSize: 18
                             }}
                             >

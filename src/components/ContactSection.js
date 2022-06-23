@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaGithubSquare } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
 
 function ContactSection() {
   return (
@@ -8,6 +10,10 @@ function ContactSection() {
         <button onClick={() =>  navigator.clipboard.writeText('ad.hauck@gmail.com')}>
           Copy
         </button>
+        <div>
+          <FaGithubSquare />
+          <FaLinkedin />
+        </div>
     </section>
   )
 }
