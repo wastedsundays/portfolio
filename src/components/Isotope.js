@@ -16,6 +16,7 @@ import jetreports from '../skills/skill-icon-jetreports.png';
 import jquery from '../skills/skill-icon-jquery.png';
 import photoshop from '../skills/skill-icon-photoshop.png';
 import php from '../skills/skill-icon-php.png';
+import powerbi from '../skills/skill-icon-powerbi.png';
 import react from '../skills/skill-icon-react.png';
 import sass from '../skills/skill-icon-sass.png';
 import shopify from '../skills/skill-icon-shopify.png';
@@ -110,6 +111,9 @@ const IsotopeReact = () => {
           </div>
           <div className="filter-item dev fave">
             <img src={php} alt="PHP"/>
+          </div>
+          <div className="filter-item other">
+            <img src={powerbi} alt="Power BI"/>
           </div>
           <div className="filter-item dev">
             <img src={react} alt="React"/>
