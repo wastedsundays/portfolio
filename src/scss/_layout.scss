@@ -15,7 +15,7 @@ section{
     min-height: 100vh;
 }
 
-.about-section, .contact-section{
+.about-section, .projects-section, .contact-section{
     padding-top: 3.75rem;
 }
 
@@ -33,6 +33,6 @@ body::-webkit-scrollbar {
   }
 
   //this is temporary
-  img{
-    width: 95%;
-  }
+//   img{
+//     width: 95%;
+//   }
