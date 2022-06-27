@@ -11,6 +11,15 @@
   .headerbar{
     background-color: rgba(variables.$mineshaft,.45);
   }
+
+  .contact-box{
+    svg{
+      fill: variables.$gallery;
+    }
+    svg:hover{
+      fill: variables.$honolulu;
+    }
+  }
 }
 
 #light {
@@ -20,12 +29,16 @@
     .headerbar{
       background-color: rgba(variables.$white,.55);
     }
+    .contact-box{
+      svg{
+        fill: variables.$mineshaft;
+      }
+
+      svg:hover{
+        fill: variables.$honolulu;
+      }
+    }
   }
-
-
-
-
-
 
 
 
