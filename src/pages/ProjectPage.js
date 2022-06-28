@@ -50,7 +50,7 @@ function ProjectPage() {
           </div>
       
           <div className='link-button-wrapper'>
-            <a href={restData[0].acf.link_to_live_site}>
+            <a href={restData[0].acf.link_to_live_site} target="_blank" rel="noreferrer">
               <button className='link-button'>Try It</button>
             </a>
           </div>
@@ -65,7 +65,7 @@ function ProjectPage() {
           </div>
 
           <div className='link-button-wrapper'>
-            <a href={restData[0].acf.link_to_repo}>
+            <a href={restData[0].acf.link_to_repo} target="_blank" rel="noreferrer">
               <button className='link-button'>Git Repo</button>
             </a>
           </div>

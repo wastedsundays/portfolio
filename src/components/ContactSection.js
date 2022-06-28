@@ -6,7 +6,7 @@ function ContactSection() {
   return (
     <section className='contact-section' id='contact'>
 
-        <h2>Contact Me</h2>
+        <h2>Get in touch</h2>
         <div className='contact-box'>
           <p>ad.hauck@gmail.com</p>
           {/* <button className='link-button' onClick={() =>  navigator.clipboard.writeText('ad.hauck@gmail.com')}>

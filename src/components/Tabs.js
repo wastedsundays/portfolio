@@ -70,7 +70,8 @@ const [isLoaded, setIsLoaded] = useState(false)
       { isLoaded ?
         <>
           <Box sx={{ width: '100%' }}>
-            <Box sx={{ borderBottom: 1, borderColor: '#0097E9' }}>
+            {/* <Box sx={{ borderBottom: 1}}> */}
+            <Box>
               {/* This section creates the tab headers...and some of the options (scrollButtons, etc.) 
               The value for i in {a11yProps(i) has to match the index={i} so that the tab matches the content.
               This is looping, but <Tab label="Title" {a11yProps(0)} /> (followed by 1,2,3 etc if you're not
@@ -95,6 +96,10 @@ const [isLoaded, setIsLoaded] = useState(false)
                           className="featured-image"
                           alt={`${proj2.title.rendered} screenshot`}
                       />
+                      <div className='project-section'>
+                        <h3>{proj2.title.rendered}</h3>
+                        <p>test</p>
+                      </div>
                     <div className='link-button-wrapper'>
                       <NavLink to={`/project-details/${proj2.slug}`}>
                         <button className="link-button">See More</button>
