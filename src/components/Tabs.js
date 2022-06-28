@@ -96,7 +96,7 @@ const [isLoaded, setIsLoaded] = useState(false)
                           alt={`${proj2.title.rendered} screenshot`}
                       />
                     <div>
-                      <button>
+                      <button className="link-button">
                         <NavLink to={`/project-details/${proj2.slug}`}>See More</NavLink>
                       </button>
                     </div>

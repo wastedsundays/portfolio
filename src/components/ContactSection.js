@@ -8,10 +8,10 @@ function ContactSection() {
 
         <h2>Contact Me</h2>
         <div className='contact-box'>
-          <p>email ad.hauck@gmail.com</p>
-          <button className='btn-hover' onClick={() =>  navigator.clipboard.writeText('ad.hauck@gmail.com')}>
+          <p>ad.hauck@gmail.com</p>
+          {/* <button className='link-button' onClick={() =>  navigator.clipboard.writeText('ad.hauck@gmail.com')}>
             Copy
-          </button>
+          </button> */}
           <div>
             <a href="https://github.com/wastedsundays" target="_blank" rel="noreferrer">
               <FaGithubSquare />

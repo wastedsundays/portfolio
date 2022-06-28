@@ -20,6 +20,15 @@
       fill: variables.$honolulu;
     }
   }
+
+  .link-button{
+    background-color: variables.$white;
+    color: variables.$mineshaft;
+
+    a {
+        color: variables.$mineshaft;
+    }
+  }
 }
 
 #light {

@@ -1,0 +1,15 @@
+@use 'variables';
+
+.link-button {
+    height: 36px;
+    width: 170px;
+    border-radius: 10px;
+    border: none;
+    background-color: variables.$mineshaft;
+    color: variables.$white;
+
+    a {
+        color: variables.$white;
+    }
+
+}
