@@ -24,10 +24,10 @@
   .link-button{
     background-color: variables.$white;
     color: variables.$mineshaft;
+  }
 
-    a {
-        color: variables.$mineshaft;
-    }
+  .link-button:hover{
+    background-color: variables.$honolulu;
   }
 }
 

@@ -95,10 +95,10 @@ const [isLoaded, setIsLoaded] = useState(false)
                           className="featured-image"
                           alt={`${proj2.title.rendered} screenshot`}
                       />
-                    <div>
-                      <button className="link-button">
-                        <NavLink to={`/project-details/${proj2.slug}`}>See More</NavLink>
-                      </button>
+                    <div className='link-button-wrapper'>
+                      <NavLink to={`/project-details/${proj2.slug}`}>
+                        <button className="link-button">See More</button>
+                      </NavLink>
                     </div>
                   </TabPanel>)}
               

@@ -41,26 +41,41 @@ function ProjectPage() {
           className="featured-image"
           alt={`${restData[0].title.rendered} screenshot`}
         />
-        
-        <h2>{restData[0].title.rendered}</h2>
-        <p>{restData[0].acf.project_description}</p>
-        <p>{restData[0].acf.project_feature}</p>
-     
-        <div>
-          <button>
-            <a href={restData[0].acf.link_to_live_site}>Try It</a>
-          </button>
-        </div>
-        <div>
-          <button>
-            <a href={restData[0].acf.link_to_repo}>Git Repo</a>
-          </button>
-        </div>
-        <img src={restData[0].acf.project_image_1} alt=""/>
-        <img src={restData[0].acf.project_image_2} alt=""/> 
+        <div className='project-details'>
+          <h2>{restData[0].title.rendered}</h2>
+
+          <div className='project-section'>
+            <h3>Description</h3>
+            <p>{restData[0].acf.project_description}</p>
+          </div>
+      
+          <div className='link-button-wrapper'>
+            <a href={restData[0].acf.link_to_live_site}>
+              <button className='link-button'>Try It</button>
+            </a>
+          </div>
+
+          <div className='project-section'>
+            <h3>Tools Used</h3>
+          </div>
+          
+          <div className='project-section'>
+            <h3>Subheading2</h3>
+            <p>{restData[0].acf.project_feature}</p>
+          </div>
+
+          <div className='link-button-wrapper'>
+            <a href={restData[0].acf.link_to_repo}>
+              <button className='link-button'>Git Repo</button>
+            </a>
+          </div>
+          
+          <img src={restData[0].acf.project_image_1} alt=""/>
+          <img src={restData[0].acf.project_image_2} alt=""/> 
 
 
-      </div> 
+        </div> 
+      </div>
       
 
       :
