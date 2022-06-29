@@ -30,6 +30,7 @@ function ProjectPage() {
   }, [restPath])
 
 
+
   return (
     <>
     <HeaderBar />
@@ -48,16 +49,19 @@ function ProjectPage() {
             <h3>Description</h3>
             <p>{restData[0].acf.project_description}</p>
           </div>
-      
+
+          {restData[0].acf.link_to_live_site !== '' &&
           <div className='link-button-wrapper'>
             <a href={restData[0].acf.link_to_live_site} target="_blank" rel="noreferrer">
               <button className='link-button'>Try It</button>
             </a>
           </div>
+          }
 
           <div className='project-section'>
             <h3>Tools Used</h3>
           </div>
+          
           
           <div className='project-section'>
             <h3>Subheading2</h3>
