@@ -68,11 +68,13 @@ function ProjectPage() {
             <p>{restData[0].acf.project_feature}</p>
           </div>
 
+          {restData[0].acf.link_to_repo !== '' &&
           <div className='link-button-wrapper'>
             <a href={restData[0].acf.link_to_repo} target="_blank" rel="noreferrer">
               <button className='link-button'>Git Repo</button>
             </a>
           </div>
+          }
           
           <img src={restData[0].acf.project_image_1} alt=""/>
           <img src={restData[0].acf.project_image_2} alt=""/> 
