@@ -60,6 +60,11 @@ function ProjectPage() {
 
           <div className='project-section'>
             <h3>Tools Used</h3>
+            <div className='project-tools-grid'>
+              {restData[0].acf.image_gallery.map(function(image, imageIndex){
+              return <img key={ imageIndex } src={ image } alt='test' />
+              })}
+            </div>
           </div>
           
           

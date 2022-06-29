@@ -17,6 +17,16 @@
     margin: 2rem 0;
 }
 
+.project-tools-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img{
+        margin: 10px;
+    }
+}
+
 #light{
     .project-section {
         box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 
