@@ -71,14 +71,21 @@ function ProjectPage() {
           {restData[0].acf.link_to_repo !== '' &&
           <div className='link-button-wrapper'>
             <a href={restData[0].acf.link_to_repo} target="_blank" rel="noreferrer">
-              <button className='link-button'>Git Repo</button>
+              <button className='link-button'>Code</button>
             </a>
           </div>
           }
           
-          <img src={restData[0].acf.project_image_1} alt=""/>
-          <img src={restData[0].acf.project_image_2} alt=""/> 
+          <img src={restData[0].acf.project_image_1} alt="" className='project-image project-image-1'/>
+          <img src={restData[0].acf.project_image_2} alt="" className='project-image project-image-2'/> 
 
+          {restData[0].acf.link_to_design !== '' &&
+          <div className='link-button-wrapper'>
+            <a href={restData[0].acf.link_to_design} target="_blank" rel="noreferrer">
+              <button className='link-button'>Design</button>
+            </a>
+          </div>
+          }
 
         </div> 
       </div>
