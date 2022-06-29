@@ -4,22 +4,68 @@
     text-align: center;
 }
 
+// .link-button {
+//     text-transform: uppercase;
+//     height: 36px;
+//     width: 170px;
+//     border-radius: 10px;
+//     border: none;
+//     margin: 1rem auto;
+//     background-color: variables.$mineshaft;
+//     color: variables.$white;
+
+//     a {
+//         color: variables.$white;
+//     }
+
+// }
+
+// .link-button:hover {
+//     background-color: variables.$honolulu;
+// }
+
+
+
+$color: #0cf;
+
 .link-button {
-    text-transform: uppercase;
-    height: 36px;
-    width: 170px;
-    border-radius: 10px;
-    border: none;
-    margin: 1rem auto;
+  display: inline-block;
+  border-radius: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  height: 36px;
+  width: 170px;
+  transition: all .7s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: variables.$mineshaft;
-    color: variables.$white;
-
-    a {
-        color: variables.$white;
-    }
-
-}
-
-.link-button:hover {
+    border-radius: 10px;
+    z-index: -2;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
     background-color: variables.$honolulu;
+    transition: all .7s;
+    border-radius: 10px;
+    z-index: -1;
+  }
+  &:hover {
+    color: #fff;
+    &:before {
+      width: 100%;
+    }
+  }
 }
