@@ -1,3 +1,5 @@
+@use 'variables';
+
 .featured-image{
     width: 100%;
     display: block;
@@ -7,3 +9,23 @@
 .project-image {
     width: 100%;
 }
+
+#light{
+    .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+        color: variables.$mineshaft;
+    }
+    .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.Mui-selected.css-1h9z7r5-MuiButtonBase-root-MuiTab-root{
+        color: variables.$honolulu;
+    }
+}
+
+#dark{
+    .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+        color: variables.$gallery;
+    }
+    .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.Mui-selected.css-1h9z7r5-MuiButtonBase-root-MuiTab-root{
+        color: variables.$cerulian;
+    }
+}
+
+
