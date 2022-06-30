@@ -66,7 +66,6 @@ function ProjectPage() {
             </div>
           </div>
           
-          
           <div className='project-section'>
             <h3>Subheading2</h3>
             <p>{restData[0].acf.project_feature}</p>
@@ -107,8 +106,7 @@ function ProjectPage() {
           </div>
         </div> 
       </div>
-      
-
+    
       :
 
       <section className='loading'>
@@ -116,9 +114,6 @@ function ProjectPage() {
       </section>
     }
     </>
-
-
- 
   )
   }
 
