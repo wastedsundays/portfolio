@@ -1,4 +1,4 @@
-.project-home-section{
+.project-home-section {
     padding: 60px 0;
     grid-column-start: 2;
 
@@ -7,7 +7,7 @@
     }
 }
 
-.project-details{
+.project-details {
     width: 90%;
     max-width: 800px;
     margin: 0 auto;
@@ -17,12 +17,12 @@
     margin: 2rem 0;
 }
 
-.project-tools-grid{
+.project-tools-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
-    img{
+    img {
         margin: 10px;
     }
 }
@@ -49,4 +49,11 @@
         border-bottom-right-radius: 4px;    
         padding: 1rem;
     }
+}
+
+.project-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
 }

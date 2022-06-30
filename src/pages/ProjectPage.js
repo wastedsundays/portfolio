@@ -2,12 +2,12 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import HeaderBar from '../components/HeaderBar';
-// import Loop from '../components/Loop'
+import { NavHashLink } from 'react-router-hash-link';
+import Loading from '../components/Loading';
 
 function ProjectPage() {
-  // const { id } = useParams()
   const { slug } = useParams()
-  // const restPath = `https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/fwd-projects/${id}?acf_format=standard`
+
   const restPath = `https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/fwd-projects?acf_format=standard&slug=${ slug }`
   
     
@@ -36,8 +36,7 @@ function ProjectPage() {
     <HeaderBar />
     { isLoaded ?
       <div className='project-home-section'>
-        {/* <p>{restData[0].id}</p> */}
-         <img
+        <img
           src={restData[0].acf.project_featured_image}
           className="featured-image"
           alt={`${restData[0].title.rendered} screenshot`}
@@ -91,7 +90,21 @@ function ProjectPage() {
             </a>
           </div>
           }
+          <div className='project-navigation'>
 
+          {restData[0].previous !=='' &&
+            // <p>{restData[0].previous.slug}</p>
+            <NavHashLink to={`/project-details/${restData[0].previous.slug}#top`}>
+            <button className="link-button">{restData[0].previous.title}</button>
+          </NavHashLink>
+            
+          }
+          {restData[0].next !=='' &&
+            <NavHashLink to={`/project-details/${restData[0].next.slug}#top`}>
+            <button className="link-button">{restData[0].next.title}</button>
+            </NavHashLink>
+          }
+          </div>
         </div> 
       </div>
       
@@ -99,7 +112,7 @@ function ProjectPage() {
       :
 
       <section className='loading'>
-        <p>bye</p>
+        <Loading />
       </section>
     }
     </>
