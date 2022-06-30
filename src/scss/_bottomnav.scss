@@ -1,6 +1,7 @@
 @use 'variables';
 
 .bottom-nav{
+    z-index:200;
     position:fixed;
     bottom: 0;
     background-color: variables.$honolulu;
