@@ -28,8 +28,7 @@ function ProjectPage() {
       }
       fetchData()
   }, [restPath])
-
-
+  
 
   return (
     <>
@@ -59,14 +58,11 @@ function ProjectPage() {
 
           <div className='project-section'>
             <h3>Tools Used</h3>
-            {/* <div className='project-tools-grid'>
-              {restData[0].acf.image_gallery.map(function(image, imageIndex){
-              return <img key={ imageIndex } src={ image } alt='test' />
-              })}
-            </div> */}
             <div className='project-tools-grid'>
               {restData[0].acf.tools_used.map(function(image, imageIndex){
-              return <img key={ imageIndex } src={ restData[0].acf.tools_used[imageIndex].url } alt={restData[0].acf.tools_used[imageIndex].alt} />
+              return <img key={ imageIndex } 
+                          src={ restData[0].acf.tools_used[imageIndex].url } 
+                          alt={restData[0].acf.tools_used[imageIndex].alt} />
               })}
             </div>
           </div>
