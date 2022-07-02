@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
-// import Loading from '../images/spinning-record.gif';
+
+
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -11,6 +12,7 @@ import DeveloperBoardIcon from '@mui/icons-material/DeveloperBoard';
 import InfoIcon from '@mui/icons-material/Info';
 
 import IsotopeReact from './Isotope';
+import Loading  from './Loading';
 
 export default function SimpleAccordion() {
 
@@ -53,8 +55,8 @@ export default function SimpleAccordion() {
            
           </AccordionDetails>
         :
-            // <Loading />
-            <p>Hi</p>
+            <Loading />
+          
         }
       </Accordion>
       <Accordion>
@@ -82,10 +84,12 @@ export default function SimpleAccordion() {
         <AccordionDetails>
             <h3>BCIT</h3>
             <h4>Front End Web Developer Certificate</h4>
+            <p>Vancouver, BC</p>
             <em>Jan 2022 - July 2022</em>
 
             <h3>Fanshawe College</h3>
             <h4>Diploma - Accounting</h4>
+            <p>London, ON</p>
             <em>Sept 2005 - Apr 2007</em>
 
             <h3>Wilfrid Laurier University</h3>
