@@ -8,7 +8,7 @@ import Loading from '../components/Loading';
 function ProjectPage() {
   const { slug } = useParams()
 
-  const restPath = `https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/fwd-projects?acf_format=standard&slug=${ slug }`
+  const restPath = `https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/fwd-projects?acf_format=standard&slug=${ slug }&_embed`
   
     
   const [restData, setData] = useState([])    
@@ -59,9 +59,14 @@ function ProjectPage() {
 
           <div className='project-section'>
             <h3>Tools Used</h3>
-            <div className='project-tools-grid'>
+            {/* <div className='project-tools-grid'>
               {restData[0].acf.image_gallery.map(function(image, imageIndex){
               return <img key={ imageIndex } src={ image } alt='test' />
+              })}
+            </div> */}
+            <div className='project-tools-grid'>
+              {restData[0].acf.tools_used.map(function(image, imageIndex){
+              return <img key={ imageIndex } src={ restData[0].acf.tools_used[imageIndex].url } alt={restData[0].acf.tools_used[imageIndex].alt} />
               })}
             </div>
           </div>
@@ -92,7 +97,6 @@ function ProjectPage() {
           <div className='project-navigation'>
 
           {restData[0].previous !=='' &&
-            // <p>{restData[0].previous.slug}</p>
             <NavHashLink to={`/project-details/${restData[0].previous.slug}#top`}>
             <button className="link-button">{restData[0].previous.title}</button>
           </NavHashLink>
@@ -105,6 +109,8 @@ function ProjectPage() {
           }
           </div>
         </div> 
+
+
 
       </div>
 
