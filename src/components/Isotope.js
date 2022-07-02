@@ -54,7 +54,7 @@ const IsotopeReact = () => {
     }, [filterKey])
   
     const handleFilterKeyChange = key => () => setFilterKey(key)
-  
+    
     return (
       <>
         <div className='selector-buttons'>        

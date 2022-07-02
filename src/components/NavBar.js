@@ -14,14 +14,6 @@ import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 
 function NavBar() {
 
-
-//   const scrollWithOffset = (el) => {
-//     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-//     const yOffset = -80; 
-//     window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
-// }
-
-
   return (
     <nav className='navbar'>
 
@@ -67,7 +59,6 @@ function NavBar() {
                     </div>
                 </NavHashLink>
             </li>
-            {/* <li><NavHashLink to="/project">Ind.Project</NavHashLink></li> */}
         </ul>
         <div className="navbar-text">
             <p>&copy; 2022 Adam H.</p>
