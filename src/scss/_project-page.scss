@@ -51,9 +51,23 @@
     }
 }
 
-.project-navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+// .project-navigation {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: flex-end;
 
+// }
+
+.project-navigation {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+
+    @media screen and (min-width: 600px) {
+
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
 }
