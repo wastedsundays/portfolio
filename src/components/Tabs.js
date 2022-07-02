@@ -78,7 +78,7 @@ const [isLoaded, setIsLoaded] = useState(false)
               dynamically generating these...{a11yProps(1)}. The tab, when clicked, will show the content for whichever
               TabPanel has an index={} equal to that header. Tab is self-closing, TabPanel is not.*/}
               {setIsLoaded && 
-                <Tabs value={value} 
+                <Tabs value={2} 
                       onChange={handleChange} 
                       variant="scrollable"
                       scrollButtons 
@@ -90,7 +90,7 @@ const [isLoaded, setIsLoaded] = useState(false)
                 </Tabs> }
 
                 {restData.map((proj2, i) =>
-                  <TabPanel value={value} index={i} key={proj2.id}>
+                  <TabPanel value={2} index={i} key={proj2.id}>
                     <img
                           src={proj2.acf.project_featured_image}
                           className="featured-image"
