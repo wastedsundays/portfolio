@@ -2,29 +2,30 @@ import * as React from 'react';
 import Isotope from 'isotope-layout';
 // import Loop from './Loop';
 
-import bootstrap from '../skills/skill-icon-bootstrap.png';
-import cakewalk from '../skills/skill-icon-cakewalk.png';
-import crystal from '../skills/skill-icon-crystalreports.png';
-import css from '../skills/skill-icon-css.png';
-import excel from '../skills/skill-icon-excel.png';
-import git from '../skills/skill-icon-git.png';
-import gulp from '../skills/skill-icon-gulp.png';
-import HTML from '../skills/skill-icon-html.png';
-import illustrator from '../skills/skill-icon-illustrator.png';
-import javascript from '../skills/skill-icon-javascript.png';
-import jetreports from '../skills/skill-icon-jetreports.png';
-import jquery from '../skills/skill-icon-jquery.png';
-import photoshop from '../skills/skill-icon-photoshop.png';
-import php from '../skills/skill-icon-php.png';
-import powerbi from '../skills/skill-icon-powerbi.png';
-import react from '../skills/skill-icon-react.png';
-import sass from '../skills/skill-icon-sass.png';
-import shopify from '../skills/skill-icon-shopify.png';
-import sql from '../skills/skill-icon-sql.png';
-import vscode from '../skills/skill-icon-vscode.png';
-import woocommerce from '../skills/skill-icon-woocommerce.png';
-import wordpress from '../skills/skill-icon-wordpress.png';
-import xd from '../skills/skill-icon-xd.png';
+import bootstrap from '../skills/small-skill-icon-bootstrap.png';
+import cakewalk from '../skills/small-skill-icon-cakewalk.png';
+import crystal from '../skills/small-skill-icon-crystalreports.png';
+import css from '../skills/small-skill-icon-css.png';
+import excel from '../skills/small-skill-icon-excel.png';
+import git from '../skills/small-skill-icon-git.png';
+import gulp from '../skills/small-skill-icon-gulp.png';
+import HTML from '../skills/small-skill-icon-html.png';
+import illustrator from '../skills/small-skill-icon-illustrator.png';
+import javascript from '../skills/small-skill-icon-javascript.png';
+import jetreports from '../skills/small-skill-icon-jetreports.png';
+import jquery from '../skills/small-skill-icon-jquery.png';
+import photoshop from '../skills/small-skill-icon-photoshop.png';
+import php from '../skills/small-skill-icon-php.png';
+import powerbi from '../skills/small-skill-icon-powerbi.png';
+import react from '../skills/small-skill-icon-react.png';
+import restapi from '../skills/small-skill-icon-rest-api.png';
+import sass from '../skills/small-skill-icon-sass.png';
+import shopify from '../skills/small-skill-icon-shopify.png';
+import sql from '../skills/small-skill-icon-sql.png';
+import vscode from '../skills/small-skill-icon-vscode.png';
+import woocommerce from '../skills/small-skill-icon-woocommerce.png';
+import wordpress from '../skills/small-skill-icon-wordpress.png';
+import xd from '../skills/small-skill-icon-xd.png';
 
 
 
@@ -117,6 +118,9 @@ const IsotopeReact = () => {
           </div>
           <div className="filter-item dev">
             <img src={react} alt="React"/>
+          </div>
+          <div className="filter-item dev fave">
+            <img src={restapi} alt="RestAPI"/>
           </div>
           <div className="filter-item dev">
             <img src={sass} alt="SASS"/>
