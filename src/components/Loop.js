@@ -3,14 +3,14 @@ import React, { useState, useEffect }  from 'react';
 function Loop() {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
-    const [users, setUsers] = useState([]);
+    const [tools, setTools] = useState([]);
     useEffect(() => {
-        fetch("https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/fwd-projects?acf_format=standard")
+        fetch("https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/tools-tx?acf_format=standard")
             .then(res => res.json())
             .then(
                 (data) => {
                     setIsLoaded(true);
-                    setUsers(data);
+                    setTools(data);
                 },
                 (error) => {
                     setIsLoaded(true);
@@ -25,12 +25,16 @@ if (error) {
     } else {
         return (
             <ul className="filter-container">
-        
-                {users.map(user => (
+                {/* {tools.map(tool => (
+                    
+
+                ))} */}
+
+                {/* {users.map(user => (
                     <div key={user.id} className={`filter-item ${user.title.rendered}`}>
                         <p>{user.title.rendered} {user.id} {user.slug}</p>
                     </div>
-                ))}
+                ))} */}
             </ul>
         );
     }

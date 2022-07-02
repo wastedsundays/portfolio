@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Isotope from 'isotope-layout';
-import Loop from './Loop';
+// import Loop from './Loop';
 
 import bootstrap from '../skills/skill-icon-bootstrap.png';
 import cakewalk from '../skills/skill-icon-cakewalk.png';
