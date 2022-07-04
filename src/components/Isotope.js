@@ -66,7 +66,7 @@ const IsotopeReact = () => {
     return (
       <>
         <div className='selector-buttons'>        
-          <button className='button-checked' id="all-filter" onClick={handleFilterKeyChange('*')}>All</button>
+          <button className='' id="all-filter" onClick={handleFilterKeyChange('*')}>All</button>
           <button className=''  id="fave-filter" onClick={handleFilterKeyChange('fave')}>Favourites</button>
           <button className=''  id="dev-filter" onClick={handleFilterKeyChange('dev')}>Dev</button>
           <button className=''  id="design-filter" onClick={handleFilterKeyChange('design')}>Design</button>
