@@ -2,6 +2,15 @@
 @use 'mixins' as m;
 
 
+
+.Mui-expanded {
+    color: variables.$cerulian;
+}
+
+#dark .Mui-expanded {
+    color: variables.$cerulian;
+}
+
 .filter-container{
     img{
         filter: grayscale(25%);
