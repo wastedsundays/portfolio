@@ -83,20 +83,20 @@ export default function SimpleAccordion() {
         <AccordionDetails>
           <div className="education-accordion">
             <div className="education-card">
-              <h3>BCIT - Vancouver, BC</h3>
-              <h4>Front End Web Developer Certificate</h4>
-              <em>Jan 2022 - July 2022</em>
+              <p className="education-institution">BCIT - Vancouver, BC</p>
+              <p className="education-major">Front End Web Developer Certificate</p>
+              <p className="education-duration">Jan 2022 - July 2022</p>
             </div>
             <div className="education-card">
-              <h3>Fanshawe College - London, ON</h3>
-              <h4>Diploma - Accounting</h4>
-              <em>Sept 2005 - Apr 2007</em>
-              <p>Received Fanshawe College Scholastic Excellence Award.</p>
+              <p className="education-institution">Fanshawe College - London, ON</p>
+              <p className="education-major">Diploma - Accounting</p>
+              <p className="education-duration">Sept 2005 - Apr 2007</p>
+              <p className="education-notes">Received Fanshawe College Scholastic Excellence Award.</p>
             </div>
             <div className="education-card">
-              <h3>Wilfrid Laurier University - Waterloo, ON</h3>
-              <h4>Major: Communications</h4>
-              <em>Sept 1997 - Apr 1998</em>
+              <p className="education-institution">Wilfrid Laurier University - Waterloo, ON</p>
+              <p className="education-major">Major: Communications</p>
+              <p className="education-duration">Sept 1997 - Apr 1998</p>
             </div>
           </div>
 

@@ -41,6 +41,16 @@
     }
 
     .education-card {
-        margin: 2rem 0;
+        margin: 2rem;
+        .education-institution {
+            font-weight: 600;
+        }
+        .education-major {
+            font-weight: 500;
+        }
+
+        .education-duration{
+            font-style: italic;
+        }
     }
 }
