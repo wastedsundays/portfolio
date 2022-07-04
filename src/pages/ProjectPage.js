@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import HeaderBar from '../components/HeaderBar';
 import { NavHashLink } from 'react-router-hash-link';
 import Loading from '../components/Loading';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 function ProjectPage() {
   const { slug } = useParams()
@@ -75,7 +76,7 @@ function ProjectPage() {
           {restData[0].acf.link_to_repo !== '' &&
           <div className='link-button-wrapper'>
             <a href={restData[0].acf.link_to_repo} target="_blank" rel="noreferrer">
-              <button className='link-button'>Code</button>
+              <button className='link-button'><GitHubIcon />Code</button>
             </a>
           </div>
           }
