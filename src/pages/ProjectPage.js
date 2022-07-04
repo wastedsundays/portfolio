@@ -71,6 +71,7 @@ function ProjectPage() {
           <div className='project-section'>
             <h3>Subheading2</h3>
             <p>{restData[0].acf.project_feature}</p>
+            <pre><code>{restData[0].acf.code_demo}</code></pre>
           </div>
 
           {restData[0].acf.link_to_repo !== '' &&
