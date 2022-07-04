@@ -65,7 +65,7 @@ export default function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography><DeveloperBoardIcon />Skills</Typography>
+          <DeveloperBoardIcon />Skills
         </AccordionSummary>
         <AccordionDetails>
 
@@ -79,7 +79,7 @@ export default function SimpleAccordion() {
           aria-controls="panel3a-content"
           id="panel3a-header"
         >
-          <Typography><SchoolIcon />Education</Typography>
+          <SchoolIcon />Education
         </AccordionSummary>
         <AccordionDetails>
             <h3>BCIT</h3>
