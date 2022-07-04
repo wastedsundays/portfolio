@@ -76,7 +76,7 @@ function ProjectPage() {
           {restData[0].acf.link_to_repo !== '' &&
           <div className='link-button-wrapper'>
             <a href={restData[0].acf.link_to_repo} target="_blank" rel="noreferrer">
-              <button className='link-button'><GitHubIcon />Code</button>
+              <button className='link-button git-link'><GitHubIcon /> <p>Code</p></button>
             </a>
           </div>
           }

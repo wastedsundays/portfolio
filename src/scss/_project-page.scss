@@ -59,8 +59,8 @@
 
     .link-button {
         margin: 10px 0;
+        
     }
-
 
     @media screen and (min-width: 600px) {
 
@@ -69,3 +69,16 @@
         align-items: flex-end;
     }
 }
+
+.link-button.git-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    svg {
+        padding-right:5px;
+    }
+}
+
