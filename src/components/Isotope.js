@@ -55,15 +55,20 @@ const IsotopeReact = () => {
     }, [filterKey])
   
     const handleFilterKeyChange = key => () => setFilterKey(key)
+
+    // add class "button-checked" when that button is clicked on 
+    // AND remove "button-checked" from any other buttons in the div.
+    // plus also do the handlFilterKeyChange each time.
+    // in an ideal scenario, if I click the button that's already clicked, it will revert the filter to * and uncheck all buttons.
     
     return (
       <>
         <div className='selector-buttons'>        
-          <button onClick={handleFilterKeyChange('*')}>All</button>
-          <button onClick={handleFilterKeyChange('fave')}>Favourites</button>
-          <button onClick={handleFilterKeyChange('dev')}>Dev</button>
-          <button onClick={handleFilterKeyChange('design')}>Design</button>
-          <button onClick={handleFilterKeyChange('other')}>Other</button>
+          <button className='button-checked' onClick={handleFilterKeyChange('*')}>All</button>
+          <button className='' onClick={handleFilterKeyChange('fave')}>Favourites</button>
+          <button className='' onClick={handleFilterKeyChange('dev')}>Dev</button>
+          <button className='' onClick={handleFilterKeyChange('design')}>Design</button>
+          <button className='' onClick={handleFilterKeyChange('other')}>Other</button>
         </div>
 
         <hr />

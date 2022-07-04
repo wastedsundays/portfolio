@@ -15,6 +15,9 @@ function HomeSection() {
           <img src={HeroImage} alt="Black and White of Adam"/>
         </figure>
 
+
+
+
     </section>
   )
 }
