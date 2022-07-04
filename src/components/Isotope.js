@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Isotope from 'isotope-layout';
+import $ from 'jquery';
 // import Loop from './Loop';
 
 import bootstrap from '../skills/small-skill-icon-bootstrap.png';
@@ -55,22 +56,29 @@ const IsotopeReact = () => {
     }, [filterKey])
   
     const handleFilterKeyChange = key => () => {
-      setFilterKey(key)
-      console.log(key)
+      if (document.getElementById(key).classList.contains('button-checked')){
+        document.getElementById(key).classList.remove('button-checked');
+        setFilterKey('*');
+      } else {
+        setFilterKey(key);
+        const removebuttons = Array.from(document.getElementsByClassName('button-checked'));
+        removebuttons.forEach(button => {
+          button.classList.remove('button-checked');
+        });
+        // document.getElementsByClassName('selector-buttons').classList.remove('button-checked')
+        document.getElementById(key).classList.add('button-checked');
+        // setFilterKey(key);
     }
-    // add class "button-checked" when that button is clicked on 
-    // AND remove "button-checked" from any other buttons in the div.
-    // plus also do the handlFilterKeyChange each time.
-    // in an ideal scenario, if I click the button that's already clicked, it will revert the filter to * and uncheck all buttons.
-    
+  }
+
     return (
       <>
         <div className='selector-buttons'>        
-          <button className='' id="all-filter" onClick={handleFilterKeyChange('*')}>All</button>
-          <button className=''  id="fave-filter" onClick={handleFilterKeyChange('fave')}>Favourites</button>
-          <button className=''  id="dev-filter" onClick={handleFilterKeyChange('dev')}>Dev</button>
-          <button className=''  id="design-filter" onClick={handleFilterKeyChange('design')}>Design</button>
-          <button className='' id="other-filter" onClick={handleFilterKeyChange('other')}>Other</button>
+          <button className='button-checked' id="*" onClick={handleFilterKeyChange('*')}>All</button>
+          <button className=''  id="fave" onClick={handleFilterKeyChange('fave')}>Favourites</button>
+          <button className=''  id="dev" onClick={handleFilterKeyChange('dev')}>Dev</button>
+          <button className=''  id="design" onClick={handleFilterKeyChange('design')}>Design</button>
+          <button className='' id="other" onClick={handleFilterKeyChange('other')}>Other</button>
         </div>
 
         <hr />
