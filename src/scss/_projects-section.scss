@@ -13,18 +13,30 @@
 #light{
     .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
         color: variables.$mineshaft;
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
     }
     .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.Mui-selected.css-1h9z7r5-MuiButtonBase-root-MuiTab-root{
         color: variables.$honolulu;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
     }
 }
 
 #dark{
     .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
         color: variables.$gallery;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
     }
     .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.Mui-selected.css-1h9z7r5-MuiButtonBase-root-MuiTab-root{
         color: variables.$cerulian;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
     }
 }
 
