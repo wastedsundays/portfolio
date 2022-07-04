@@ -90,19 +90,21 @@ function ProjectPage() {
             </a>
           </div>
           }
-          <div className='project-navigation'>
-
-          {restData[0].previous !=='' &&
-            <NavHashLink to={`/project-details/${restData[0].previous.slug}#top`}>
-            <button className="link-button">{restData[0].previous.title}</button>
-          </NavHashLink>
-            
-          }
-          {restData[0].next !=='' &&
-            <NavHashLink to={`/project-details/${restData[0].next.slug}#top`}>
-            <button className="link-button">{restData[0].next.title}</button>
-            </NavHashLink>
-          }
+          <div className='project-section'>
+          <h3>More Projects</h3>
+            <div className='project-navigation'>
+              {restData[0].previous !=='' &&
+                <NavHashLink to={`/project-details/${restData[0].previous.slug}#top`}>
+                <button className="link-button">{restData[0].previous.title}</button>
+              </NavHashLink>
+                
+              }
+              {restData[0].next !=='' &&
+                <NavHashLink to={`/project-details/${restData[0].next.slug}#top`}>
+                <button className="link-button">{restData[0].next.title}</button>
+                </NavHashLink>
+              }
+            </div>
           </div>
         </div> 
 
