@@ -5,7 +5,6 @@ import { useState, useEffect } from 'react';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SchoolIcon from '@mui/icons-material/School';
 import DeveloperBoardIcon from '@mui/icons-material/DeveloperBoard';
@@ -82,20 +81,24 @@ export default function SimpleAccordion() {
           <SchoolIcon />Education
         </AccordionSummary>
         <AccordionDetails>
-            <h3>BCIT</h3>
-            <h4>Front End Web Developer Certificate</h4>
-            <p>Vancouver, BC</p>
-            <em>Jan 2022 - July 2022</em>
-
-            <h3>Fanshawe College</h3>
-            <h4>Diploma - Accounting</h4>
-            <p>London, ON</p>
-            <em>Sept 2005 - Apr 2007</em>
-
-            <h3>Wilfrid Laurier University</h3>
-            <h4>Major: Communications</h4>
-            <em>Sept 1997 - June 1998</em>
-            
+          <div className="education-accordion">
+            <div className="education-card">
+              <h3>BCIT - Vancouver, BC</h3>
+              <h4>Front End Web Developer Certificate</h4>
+              <em>Jan 2022 - July 2022</em>
+            </div>
+            <div className="education-card">
+              <h3>Fanshawe College - London, ON</h3>
+              <h4>Diploma - Accounting</h4>
+              <em>Sept 2005 - Apr 2007</em>
+              <p>Received Fanshawe College Scholastic Excellence Award.</p>
+            </div>
+            <div className="education-card">
+              <h3>Wilfrid Laurier University - Waterloo, ON</h3>
+              <h4>Major: Communications</h4>
+              <em>Sept 1997 - Apr 1998</em>
+            </div>
+          </div>
 
 
         </AccordionDetails>
