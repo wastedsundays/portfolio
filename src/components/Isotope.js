@@ -54,8 +54,10 @@ const IsotopeReact = () => {
         : isotope.current.arrange({filter: `.${filterKey}`})
     }, [filterKey])
   
-    const handleFilterKeyChange = key => () => setFilterKey(key)
-
+    const handleFilterKeyChange = key => () => {
+      setFilterKey(key)
+      console.log(key)
+    }
     // add class "button-checked" when that button is clicked on 
     // AND remove "button-checked" from any other buttons in the div.
     // plus also do the handlFilterKeyChange each time.
