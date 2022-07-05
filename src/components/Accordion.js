@@ -8,7 +8,8 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SchoolIcon from '@mui/icons-material/School';
 import DeveloperBoardIcon from '@mui/icons-material/DeveloperBoard';
-import InfoIcon from '@mui/icons-material/Info';
+// import InfoIcon from '@mui/icons-material/Info';
+import AccountCircle from '@mui/icons-material/AccountCircle';
 
 
 import IsotopeReact from './Isotope';
@@ -45,7 +46,7 @@ export default function SimpleAccordion() {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-        <InfoIcon />Bio
+        <AccountCircle />Bio
         </AccordionSummary>
 
 

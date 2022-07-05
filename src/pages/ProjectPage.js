@@ -83,8 +83,6 @@ function ProjectPage() {
             <SyntaxHighlighter language="javascript" style={vs}>
               {restData[0].acf.code_demo}
             </SyntaxHighlighter>}
-
-
           </div>
 
           {restData[0].acf.link_to_repo !== '' &&
