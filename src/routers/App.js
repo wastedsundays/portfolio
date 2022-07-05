@@ -1,6 +1,7 @@
 import { createContext, useState, useEffect } from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import ReactSwitch from 'react-switch';
+import { Helmet } from 'react-helmet';
 
 import TestPage from '../pages/TestPage';
 import MainPage from '../pages/MainPage';
@@ -18,9 +19,9 @@ export const ThemeContext = createContext(null);
 
 function App() {
   
-  useEffect(() => {
-    document.title = "Adam H. - Front End Web Developer"
-  }, []);
+  // useEffect(() => {
+  //   document.title = "Adam H. - Front End Web Developer"
+  // }, []);
   const [theme, setTheme] = useState(localStorage.getItem('adamhPortfolio') ? localStorage.getItem('adamhPortfolio') : "light");
   // const [theme, setTheme] = useState('light');
   const toggleTheme = () => {
@@ -34,6 +35,11 @@ function App() {
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className='main' id={theme}>
+      <Helmet>
+            <meta charSet="utf-8" />
+            <title>Adam H. | Front End Web Developer</title>
+            <link rel="canonical" href="http://mysite.com/example" />
+        </Helmet>
               
         <BrowserRouter>
           <NavBar />
