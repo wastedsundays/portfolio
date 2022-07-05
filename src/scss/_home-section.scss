@@ -8,6 +8,7 @@
 	align-items: center;
 	justify-content: center;
     flex-direction: column;
+    line-height: 1;
 }
 
 .home-water {
@@ -18,8 +19,6 @@
 	color: #fff;
 	font-size: 5em;
     margin: 0;
-	// position: absolute;
-	// transform: translate(0, -150%);
 }
 
 #dark .home-water h1:nth-child(1) {
