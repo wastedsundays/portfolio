@@ -71,12 +71,6 @@ const [isLoaded, setIsLoaded] = useState(false)
         <>
           <Box sx={{ width: '100%' }}>
             <Box sx={{ color:''}}>
-            {/* <Box> */}
-              {/* This section creates the tab headers...and some of the options (scrollButtons, etc.) 
-              The value for i in {a11yProps(i) has to match the index={i} so that the tab matches the content.
-              This is looping, but <Tab label="Title" {a11yProps(0)} /> (followed by 1,2,3 etc if you're not
-              dynamically generating these...{a11yProps(1)}. The tab, when clicked, will show the content for whichever
-              TabPanel has an index={} equal to that header. Tab is self-closing, TabPanel is not.*/}
               {setIsLoaded && 
                 <Tabs value={value} 
                       onChange={handleChange} 
