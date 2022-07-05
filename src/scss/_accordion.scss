@@ -5,10 +5,16 @@
 
 .Mui-expanded {
     color: variables.$cerulian;
+    svg {
+        fill: variables.$cerulian;
+    }
 }
 
 #dark .Mui-expanded {
     color: variables.$cerulian;
+    svg {
+        fill: variables.$cerulian;
+    }
 }
 
 .filter-container{
@@ -24,7 +30,9 @@
     text-align: center;
     
     button {
-        
+        width: 90px;
+        height: 30px; 
+        font-family: 'Poppins', sans-serif;
     }
 
     .button-checked {
