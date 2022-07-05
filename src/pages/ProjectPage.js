@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import HeaderBar from '../components/HeaderBar';
@@ -40,7 +41,13 @@ function ProjectPage() {
     <>
     <HeaderBar />
     { isLoaded ?
+
       <div className='project-home-section'>
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>{restData[0].title.rendered} by Adam H.</title>
+            <link rel="canonical" href="http://mysite.com/example" />
+        </Helmet>
         <img
           src={restData[0].acf.project_featured_image}
           className="featured-image"
