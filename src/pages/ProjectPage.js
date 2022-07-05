@@ -18,6 +18,8 @@ function ProjectPage() {
   const [restData, setData] = useState([])    
   const [isLoaded, setLoadStatus] = useState(false)
 
+  // const [showMore, setShowMore] = useState(false);
+
 
   useEffect(() => {
       const fetchData = async () => {
@@ -49,7 +51,9 @@ function ProjectPage() {
 
           <div className='project-section'>
             <h3>Description</h3>
+            {/* <p>{showMore ? restData[0].acf.project_description : restData[0].acf.project_description.split(" ").slice(0, 50).join(" ")} */}
             <p>{restData[0].acf.project_description}</p>
+            {/* <button className="btn" onClick={() => setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button> */}
           </div>
 
           {restData[0].acf.link_to_live_site !== '' &&
@@ -75,9 +79,11 @@ function ProjectPage() {
             <h3>{restData[0].acf.project_feature_title}</h3>
             <p>{restData[0].acf.project_feature}</p>
             {restData[0].acf.code_demo !== '' &&
+
             <SyntaxHighlighter language="javascript" style={vs}>
               {restData[0].acf.code_demo}
             </SyntaxHighlighter>}
+
 
           </div>
 
