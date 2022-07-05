@@ -50,7 +50,7 @@ function ProjectPage() {
           <h2>{restData[0].title.rendered}</h2>
 
           <div className='project-section'>
-            <h3>Description</h3>
+            <h3>{restData[0].acf.description_title}</h3>
             {/* <p>{showMore ? restData[0].acf.project_description : restData[0].acf.project_description.split(" ").slice(0, 50).join(" ")} */}
             <p>{restData[0].acf.project_description}</p>
             {/* <button className="btn" onClick={() => setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button> */}
