@@ -15,8 +15,6 @@ function ProjectPage() {
 
   const restPath = `https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/fwd-projects?acf_format=standard&slug=${ slug }&_embed`
   
-  const codeString = '(num) => num + 1';
-
   const [restData, setData] = useState([])    
   const [isLoaded, setLoadStatus] = useState(false)
 
