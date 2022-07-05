@@ -2,91 +2,74 @@
 
 
 .home-section{
-    padding-top: 1px;
     text-align: center;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-
-    
-    img{
-        width: 200px;
-        // width: 95%;
-        // max-width: 250px;
-        // min-width: 180px;
-        display: block;
-        margin: 0 auto;
-        border-radius: 10px;
-        border: 2px solid variables.$honolulu;
-        filter: grayscale(.99);
-    }
-
-    h1{
-        margin-bottom: 0; 
-    }
-
-    .subheading{
-        margin-top:0;
-    }
-
-      img:hover{
-        animation: bloom ease-in-out .75s forwards;
-      }
-      img:hover::before {
-          animation: circle .75s;
-      }
-      @keyframes bloom {
-          0% {
-              filter: grayscale(.8);
-          }
-          40% {
-              filter: grayscale(.5);
-          }
-          100% {
-              filter: grayscale(0);
-          }
-      }
-      @keyframes circle {
-          0% {
-              opacity: .5;
-          background: rgba(0,118,182,.8);
-          
-          }
-          40% {
-              opacity: 1;
-          background: rgba(0,118,182,.8);
-          }
-          100% {
-              width: 200%;
-              height: 200%;
-              opacity: 0;
-          }
-      }
+	display: flex;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+    flex-direction: column;
+    line-height: 1;
 }
 
-@media screen and (min-width: 800px){
-    .home-section {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    // .heroinfo, .heroimage {
-    //     // flex-grow: 2;
-    //     width: 50%;
-    // }
+.home-water {
+	position: relative;
+}
 
-    .heroimage{
-        // width: 25%;
-        img{
-            margin: 0 0 0 auto;
-        }
-    }
+.home-water h1 {
+	color: #fff;
+	font-size: 5em;
+    margin: 0;
+}
 
-    .heroinfo{
-        text-align: left;
-    }
+#dark .home-water h1:nth-child(1) {
+
+	color: transparent;
+	-webkit-text-stroke: 2px variables.$honolulu;
+}
+
+.home-water h1:nth-child(1) {
+    position: absolute;
+	color: transparent;
+	-webkit-text-stroke: 2px variables.$honolulu;
+}
+
+.home-water h1:nth-child(2) {
+	color: variables.$honolulu;
+	animation: animate 4s ease-in-out infinite;
 }
 
 
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+
+.invisible {
+    visibility: hidden;
+}
