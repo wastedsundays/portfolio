@@ -113,7 +113,16 @@ function ProjectPage() {
           }
           {restData[0].acf.project_image_2 !== '' &&
           <img src={restData[0].acf.project_image_2} alt="" className='project-image project-image-2'/> 
-          } 
+          }
+          {restData[0].acf.project_image_3 !== '' &&
+          <img src={restData[0].acf.project_image_3} alt="" className='project-image project-image-2'/> 
+          }  
+          {restData[0].acf.project_image_4 !== '' &&
+          <img src={restData[0].acf.project_image_4} alt="" className='project-image project-image-2'/> 
+          }  
+          {restData[0].acf.project_image_5 !== '' &&
+          <img src={restData[0].acf.project_image_5} alt="" className='project-image project-image-2'/> 
+          }  
 
           {restData[0].acf.link_to_design !== '' &&
           <div className='link-button-wrapper'>
