@@ -55,21 +55,47 @@ const IsotopeReact = () => {
         : isotope.current.arrange({filter: `.${filterKey}`})
     }, [filterKey])
   
-    const handleFilterKeyChange = key => () => {
-      if (document.getElementById(key).classList.contains('button-checked')){
-        document.getElementById(key).classList.remove('button-checked');
-        setFilterKey('*');
+  //   const handleFilterKeyChange = key => () => {
+  //     if (document.getElementById(key).classList.contains('button-checked')){
+  //       document.getElementById(key).classList.remove('button-checked');
+  //       setFilterKey('*');
+  //     } else {
+  //       setFilterKey(key);
+  //       const removebuttons = Array.from(document.getElementsByClassName('button-checked'));
+  //       removebuttons.forEach(button => {
+  //         button.classList.remove('button-checked');
+  //       });
+  //       // document.getElementsByClassName('selector-buttons').classList.remove('button-checked')
+  //       document.getElementById(key).classList.add('button-checked');
+  //       // setFilterKey(key);
+  //   }
+  // }
+
+
+
+  const handleFilterKeyChange = key => () => {
+    // setFilterKey(key);    <--this is the original.
+    //this checks if the button is already highlighted. If it is, it unclicks it and sets the filter to ALL      
+    if (document.getElementById(key).classList.contains('button-checked')){
+      //this prevents the unclick IF all is selected and already highlighted.
+      if (key==="*") {
       } else {
-        setFilterKey(key);
-        const removebuttons = Array.from(document.getElementsByClassName('button-checked'));
-        removebuttons.forEach(button => {
-          button.classList.remove('button-checked');
-        });
-        // document.getElementsByClassName('selector-buttons').classList.remove('button-checked')
-        document.getElementById(key).classList.add('button-checked');
-        // setFilterKey(key);
+        //this now runs. (Button highlighted, and clicked again....resets filter to ALL)
+        document.getElementById(key).classList.remove('button-checked');
+        document.getElementById('*').classList.add('button-checked');
+        setFilterKey('*');
+      }
+    } else {
+      //this runs if we've clicked a button that isn't highlighted.
+      const removebuttons = Array.from(document.getElementsByClassName('button-checked'));
+      removebuttons.forEach(button => {
+      button.classList.remove('button-checked');
+    });
+    document.getElementById(key).classList.add('button-checked');
+    setFilterKey(key);
+    
     }
-  }
+  } //end of handleFilterKeyChange
 
     return (
       <>
