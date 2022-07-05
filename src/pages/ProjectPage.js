@@ -51,8 +51,8 @@ function ProjectPage() {
 
           <div className='project-section'>
             <h3>{restData[0].acf.description_title}</h3>
+            <p dangerouslySetInnerHTML={{__html:restData[0].acf.project_description}}></p>
             {/* <p>{showMore ? restData[0].acf.project_description : restData[0].acf.project_description.split(" ").slice(0, 50).join(" ")} */}
-            <p>{restData[0].acf.project_description}</p>
             {/* <button className="btn" onClick={() => setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button> */}
           </div>
 
@@ -94,6 +94,14 @@ function ProjectPage() {
             </a>
           </div>
           }
+
+          {restData[0].acf.design_feature !=='' &&
+            <div className='project-section'>
+              <h3>{restData[0].acf.design_feature_title}</h3>
+              <p dangerouslySetInnerHTML={{__html:restData[0].acf.design_feature}}></p>
+            </div>
+          }
+
           
           {restData[0].acf.project_image_1 !== '' &&
           <img src={restData[0].acf.project_image_1} alt="" className='project-image project-image-1'/>
