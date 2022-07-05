@@ -83,7 +83,7 @@ const IsotopeReact = () => {
         <div className='selector-buttons'>        
           <button className='button-checked' id="*" onClick={handleFilterKeyChange('*')}>All</button>
           <button className=''  id="fave" onClick={handleFilterKeyChange('fave')}>Favourites</button>
-          <button className=''  id="dev" onClick={handleFilterKeyChange('dev')}>Dev</button>
+          <button className=''  id="dev" onClick={handleFilterKeyChange('dev')}>Develop</button>
           <button className=''  id="design" onClick={handleFilterKeyChange('design')}>Design</button>
           <button className='' id="other" onClick={handleFilterKeyChange('other')}>Other</button>
         </div>

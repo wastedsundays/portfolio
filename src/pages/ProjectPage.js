@@ -6,12 +6,17 @@ import { NavHashLink } from 'react-router-hash-link';
 import Loading from '../components/Loading';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { vs } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+
+
 function ProjectPage() {
   const { slug } = useParams()
 
   const restPath = `https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/fwd-projects?acf_format=standard&slug=${ slug }&_embed`
   
-    
+  const codeString = '(num) => num + 1';
+
   const [restData, setData] = useState([])    
   const [isLoaded, setLoadStatus] = useState(false)
 
@@ -69,9 +74,13 @@ function ProjectPage() {
           </div>
           
           <div className='project-section'>
-            <h3>Subheading2</h3>
+            <h3>{restData[0].acf.project_feature_title}</h3>
             <p>{restData[0].acf.project_feature}</p>
-            <pre><code>{restData[0].acf.code_demo}</code></pre>
+            {restData[0].acf.code_demo !== '' &&
+            <SyntaxHighlighter language="javascript" style={vs}>
+              {restData[0].acf.code_demo}
+            </SyntaxHighlighter>}
+
           </div>
 
           {restData[0].acf.link_to_repo !== '' &&
@@ -82,8 +91,12 @@ function ProjectPage() {
           </div>
           }
           
+          {restData[0].acf.project_image_1 !== '' &&
           <img src={restData[0].acf.project_image_1} alt="" className='project-image project-image-1'/>
+          }
+          {restData[0].acf.project_image_2 !== '' &&
           <img src={restData[0].acf.project_image_2} alt="" className='project-image project-image-2'/> 
+          } 
 
           {restData[0].acf.link_to_design !== '' &&
           <div className='link-button-wrapper'>
