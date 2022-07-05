@@ -1,7 +1,5 @@
 import * as React from 'react';
 import Isotope from 'isotope-layout';
-import $ from 'jquery';
-// import Loop from './Loop';
 
 import bootstrap from '../skills/small-skill-icon-bootstrap.png';
 import cakewalk from '../skills/small-skill-icon-cakewalk.png';
@@ -55,23 +53,6 @@ const IsotopeReact = () => {
         : isotope.current.arrange({filter: `.${filterKey}`})
     }, [filterKey])
   
-  //   const handleFilterKeyChange = key => () => {
-  //     if (document.getElementById(key).classList.contains('button-checked')){
-  //       document.getElementById(key).classList.remove('button-checked');
-  //       setFilterKey('*');
-  //     } else {
-  //       setFilterKey(key);
-  //       const removebuttons = Array.from(document.getElementsByClassName('button-checked'));
-  //       removebuttons.forEach(button => {
-  //         button.classList.remove('button-checked');
-  //       });
-  //       // document.getElementsByClassName('selector-buttons').classList.remove('button-checked')
-  //       document.getElementById(key).classList.add('button-checked');
-  //       // setFilterKey(key);
-  //   }
-  // }
-
-
 
   const handleFilterKeyChange = key => () => {
     // setFilterKey(key);    <--this is the original.
