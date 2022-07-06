@@ -19,7 +19,8 @@ export default function SimpleAccordion() {
 
 
   //load the bio section
-  const restPath = 'https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/pages/73'
+  // const restPath = 'https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/pages/73'
+  const restPath = 'https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/posts/229'
   const [restData, setData] = useState([])
   const [isLoaded, setLoadStatus] = useState(false)
 
@@ -52,7 +53,7 @@ export default function SimpleAccordion() {
 
         { isLoaded ?
           <AccordionDetails>
-                <div className="entry-content" dangerouslySetInnerHTML={{__html:restData.acf.bio}}></div>
+                <div className="entry-content" dangerouslySetInnerHTML={{__html:restData.content.rendered}}></div>
            
           </AccordionDetails>
         :
