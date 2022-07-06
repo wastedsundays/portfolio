@@ -2,7 +2,6 @@
 @use 'mixins' as m;
 
 
-
 .Mui-expanded {
     color: variables.$cerulian;
     svg {
@@ -16,31 +15,6 @@
         fill: variables.$cerulian;
     }
 }
-
-.filter-container{
-    img{
-        filter: grayscale(25%);
-        padding: 10px;
-        width: 60px;
-        height: 88px;
-    }
-}
-
-.selector-buttons {
-    text-align: center;
-    
-    button {
-        width: 90px;
-        height: 30px; 
-        font-family: 'Poppins', sans-serif;
-    }
-
-    .button-checked {
-        background-color: variables.$cerulian;
-        color: variables.$white;
-    }
-}
-
 .MuiAccordionSummary-content.MuiAccordionSummary-contentGutters.css-o4b71y-MuiAccordionSummary-content {
     align-items: center;
 
@@ -64,6 +38,33 @@
     }
 }
 
+.filter-container{
+    padding-left: 0;
+    img{
+        filter: grayscale(25%);
+        padding: 10px;
+        width: 60px;
+        height: 88px;
+    }
+}
+
+.selector-buttons {
+    text-align: center;
+    
+    button {
+        width: 90px;
+        height: 30px; 
+        font-family: 'Poppins', sans-serif;
+        background-color: variables.$gallery;
+        border: 1px solid rgba(75, 75, 75, .75);
+    }
+
+    .button-checked {
+        background-color: variables.$cerulian;
+        color: variables.$white;
+    }
+}
+
 //Education Section
 .education-accordion {
     h3, h4, p {
@@ -75,6 +76,7 @@
         .education-institution {
             font-weight: 600;
         }
+        
         .education-major {
             font-weight: 500;
         }

@@ -84,7 +84,8 @@ function ProjectPage() {
           
           <div className='project-section'>
             <h3>{restData[0].acf.project_feature_title}</h3>
-            <p>{restData[0].acf.project_feature}</p>
+            <p dangerouslySetInnerHTML={{__html:restData[0].acf.project_feature}}></p>
+            {/* <p>{restData[0].acf.project_feature}</p> */}
             {restData[0].acf.code_demo !== '' &&
 
             <SyntaxHighlighter language="javascript" style={vs}>
@@ -108,20 +109,20 @@ function ProjectPage() {
           }
 
           
-          {restData[0].acf.project_image_1 !== '' &&
+          {restData[0].acf.project_image_1 !== false &&
           <img src={restData[0].acf.project_image_1} alt="" className='project-image project-image-1'/>
           }
-          {restData[0].acf.project_image_2 !== '' &&
+          {restData[0].acf.project_image_2 !== false &&
           <img src={restData[0].acf.project_image_2} alt="" className='project-image project-image-2'/> 
           }
-          {restData[0].acf.project_image_3 !== '' &&
-          <img src={restData[0].acf.project_image_3} alt="" className='project-image project-image-2'/> 
+          {restData[0].acf.project_image_3 !== false &&
+          <img src={restData[0].acf.project_image_3} alt="" className='project-image project-image-3'/> 
           }  
-          {restData[0].acf.project_image_4 !== '' &&
-          <img src={restData[0].acf.project_image_4} alt="" className='project-image project-image-2'/> 
+          {restData[0].acf.project_image_4 !== false &&
+          <img src={restData[0].acf.project_image_4} alt="" className='project-image project-image-4'/> 
           }  
-          {restData[0].acf.project_image_5 !== '' &&
-          <img src={restData[0].acf.project_image_5} alt="" className='project-image project-image-2'/> 
+          {restData[0].acf.project_image_5 !== false &&
+          <img src={restData[0].acf.project_image_5} alt="" className='project-image project-image-5'/> 
           }  
 
           {restData[0].acf.link_to_design !== '' &&
