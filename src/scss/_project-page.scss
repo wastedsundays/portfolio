@@ -87,13 +87,24 @@
     }
 }
 
-    // pre {
-    //     overflow-x: auto;
-    //     white-space: pre-wrap;
-    //     white-space: -moz-pre-wrap;
-    //     white-space: -pre-wrap;
-    //     white-space: -o-pre-wrap;
-    //     word-wrap: break-word;
-    //  }
+    .project-bottom-images {
+        @media screen and (min-width: 900px){
+            display: flex;
+        }
+    }
+    .project-image-4, .project-image-5 {
+        min-width: 250px;
+        max-width: 400px;
+        display: block;
+        margin: 0 auto;
+        padding: 5px;
+
+        @media screen and (min-width: 900px){
+        height: 50%;
+        width: 50%;
+        margin: 0;
+        
+        }
+    }
 
 

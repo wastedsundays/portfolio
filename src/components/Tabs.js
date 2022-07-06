@@ -85,7 +85,7 @@ const [isLoaded, setIsLoaded] = useState(false)
 
                 {restData.map((proj2, i) =>
                   <TabPanel value={value} index={i} key={proj2.id}>
-                    <img
+                    <img loading="lazy"
                           src={proj2.acf.project_featured_image}
                           className="featured-image"
                           alt={`${proj2.title.rendered} screenshot`}
