@@ -43,7 +43,7 @@ function App() {
             <link rel="canonical" href="https://adamh.ca" />
         </Helmet>
               
-        <BrowserRouter>
+        <BrowserRouter basename="/">
           <NavBar />
             <div className='content-area'>
               <Routes>
