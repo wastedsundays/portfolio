@@ -1,5 +1,6 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import HeaderBar from '../components/HeaderBar';
@@ -38,6 +39,7 @@ function ProjectPage() {
   
 
   return (
+    <HelmetProvider>
     <>
     <HeaderBar />
     { isLoaded ?
@@ -163,6 +165,7 @@ function ProjectPage() {
       </section>
     }
     </>
+    </HelmetProvider>
   )
   }
 
