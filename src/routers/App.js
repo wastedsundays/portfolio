@@ -1,7 +1,8 @@
 import { createContext, useState, useEffect } from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import ReactSwitch from 'react-switch';
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 import TestPage from '../pages/TestPage';
 import MainPage from '../pages/MainPage';
@@ -33,6 +34,7 @@ function App() {
   }, [theme]);
 
   return (
+    <HelmetProvider>
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className='main' id={theme}>
       <Helmet>
@@ -103,6 +105,7 @@ function App() {
 
       </div>
     </ThemeContext.Provider>
+    </HelmetProvider>
   )
 }
 
