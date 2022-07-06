@@ -10,14 +10,13 @@
 }
 
 #dark .Mui-expanded {
-    color: variables.$cerulian;
+    // color: variables.$cerulian;
     svg {
         fill: variables.$cerulian;
     }
 }
 .MuiAccordionSummary-content.MuiAccordionSummary-contentGutters.css-o4b71y-MuiAccordionSummary-content {
     align-items: center;
-
     svg {
         padding-right: 20px;
     }
