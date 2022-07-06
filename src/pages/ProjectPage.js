@@ -47,14 +47,16 @@ function ProjectPage() {
       <div className='project-home-section'>
         <Helmet>
             <meta charSet="utf-8" />
-            <title>{restData[0].title.rendered} by Adam H.</title>
-            <link rel="canonical" href="http://mysite.com/example" />
+            <title>{restData[0].title.rendered} | Adam H.</title>
+            <link rel="canonical" href={`https://adamh.ca/project-details/${slug}`} />
         </Helmet>
+
         <img
           src={restData[0].acf.project_featured_image}
           className="featured-image"
           alt={`${restData[0].title.rendered} screenshot`}
         />
+        
         <div className='project-details'>
           <h2>{restData[0].title.rendered}</h2>
 

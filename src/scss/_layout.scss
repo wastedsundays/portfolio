@@ -32,7 +32,8 @@ body::-webkit-scrollbar {
     scrollbar-width: none;  /* Firefox */
   }
 
-  //this is temporary
-//   img{
-//     width: 95%;
-//   }
+.error-message {
+    grid-column-start: 2;
+    text-align: center;
+    min-height: 100vh;
+}

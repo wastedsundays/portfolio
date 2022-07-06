@@ -40,7 +40,7 @@ function App() {
       <Helmet>
             <meta charSet="utf-8" />
             <title>Adam H. | Front End Web Developer</title>
-            <link rel="canonical" href="http://mysite.com/example" />
+            <link rel="canonical" href="https://adamh.ca" />
         </Helmet>
               
         <BrowserRouter>
@@ -62,6 +62,7 @@ function App() {
         <HeaderBar />
         <div className="lightswitch">
           <ReactSwitch  onChange={toggleTheme} 
+                        label="light/dark mode switch"
                         checked={theme === 'dark'} 
                         onColor="#333" 
                         offColor="#fff"

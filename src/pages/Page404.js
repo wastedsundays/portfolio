@@ -1,8 +1,15 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 function Page404() {
   return (
-      <p>test error page</p>
+    <div className="error-message">
+      <h1>:(</h1>
+      <p>You look lost...</p>
+      <NavLink to={"/"}>
+        <button className="link-button">Home</button>
+      </NavLink>
+    </div>
   )
 }
 
