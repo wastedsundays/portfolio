@@ -1,5 +1,6 @@
 {
   "name": "portfolio-adam",
+  "homepage": "https://adamh.ca",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
