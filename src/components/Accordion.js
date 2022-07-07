@@ -13,7 +13,7 @@ import Loading  from './Loading';
 
 export default function SimpleAccordion() {
 
-  const restPath = 'https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/posts/229'
+  const restPath = 'https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/pages/73?acf_format=standard&_embed'
   const [restData, setData] = useState([])
   const [isLoaded, setLoadStatus] = useState(false)
 
@@ -46,7 +46,15 @@ export default function SimpleAccordion() {
 
         { isLoaded ?
           <AccordionDetails>
-                <div className="entry-content" dangerouslySetInnerHTML={{__html:restData.content.rendered}}></div>           
+              <div className="accordion-bio">
+                <div className="entry-content" dangerouslySetInnerHTML={{__html:restData.acf.bio}}></div>
+                <img src={restData.acf.hero_image.sizes.medium} alt={restData.acf.hero_image.alt}/>
+                {/* <img  srcset={`${restData.acf.hero_image.sizes.thumbnail} ${restData.acf.hero_image.sizes.thumbnail-width},
+                               ${restData.acf.hero_image.sizes.medium} ${restData.acf.hero_image.sizes.medium-width}`}
+                      sizes={`(max-width: 300px) ${restData.acf.hero_image.sizes.thumbnail-width}, ${restData.acf.hero_image.sizes.medium-width}`}
+                      src={restData.acf.hero_image.sizes.medium}
+                      alt={restData.acf.hero_image.alt}/> */}
+              </div>
           </AccordionDetails>
         :
             <Loading />

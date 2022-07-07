@@ -1,6 +1,16 @@
 @use 'variables';
 @use 'mixins' as m;
 
+.accordion-bio {
+    img{
+        width: 100%;
+        max-width: 350px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 4px;
+        padding: 1rem 0;
+    }
+}
 
 .Mui-expanded {
     color: variables.$cerulian;
@@ -14,13 +24,14 @@
         fill: variables.$cerulian;
     }
 }
-.MuiAccordionSummary-content.MuiAccordionSummary-contentGutters {
 
+.MuiAccordionSummary-content.MuiAccordionSummary-contentGutters {
     align-items: center;
     svg {
         padding-right: 20px;
     }
 }
+
 #dark {
     .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiAccordion-root.MuiAccordion-rounded.MuiAccordion-gutters {    
         background-color: rgba(75, 75, 75, .75);
@@ -65,7 +76,6 @@
     }
 }
 
-//Education Section
 .education-accordion {
     h3, h4, p {
         margin: 0;
