@@ -5,13 +5,12 @@ import  Record  from '../images/404record.gif';
 function Page404() {
   return (
     <div className="error-message">
-      <h1>:(</h1>
-      <p>You look lost...</p>
+      <h1>Lost?</h1>
       <div> 
         <img
                 src={Record}
-                className="nav-logo"
-                alt="Logo"
+                className="fourohfour-gif"
+                alt="Spinning record with AH and 404 on the label"
                 />
       </div>
       <NavLink to={"/"}>

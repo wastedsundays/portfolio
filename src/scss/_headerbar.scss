@@ -7,6 +7,13 @@
     height: 40px;
     backdrop-filter: blur(15px);
     z-index:10;
+
+    .small-nav-logo {
+        width: 35px;
+        position: fixed;
+        right: 10px;
+        top: 5px;
+    }
     
     @media screen and (min-width: 800px){
         display: none;

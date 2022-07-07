@@ -1,7 +1,6 @@
 import { createContext, useState, useEffect } from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import ReactSwitch from 'react-switch';
-// import { Helmet } from 'react-helmet';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 import TestPage from '../pages/TestPage';
@@ -20,11 +19,7 @@ export const ThemeContext = createContext(null);
 
 function App() {
   
-  // useEffect(() => {
-  //   document.title = "Adam H. - Front End Web Developer"
-  // }, []);
   const [theme, setTheme] = useState(localStorage.getItem('adamhPortfolio') ? localStorage.getItem('adamhPortfolio') : "light");
-  // const [theme, setTheme] = useState('light');
   const toggleTheme = () => {
     setTheme((curr) =>(curr === 'light' ? 'dark' : 'light'))
   };
@@ -44,7 +39,11 @@ function App() {
         </Helmet>
               
         <BrowserRouter basename="/">
+          <a class="skip-to-content-link" href="#about  ">
+            Skip to content
+          </a>
           <NavBar />
+
             <div className='content-area'>
               <Routes>
                   <Route path='/' element={<MainPage />} />
@@ -60,6 +59,7 @@ function App() {
           
         </BrowserRouter>   
         <HeaderBar />
+
         <div className="lightswitch">
           <ReactSwitch  onChange={toggleTheme} 
                         label="light/dark mode switch"

@@ -11,7 +11,6 @@ function HomeSection() {
 
 
 
-
     </section>
   )
 }

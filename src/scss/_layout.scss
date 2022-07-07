@@ -1,3 +1,9 @@
+@use 'variables';
+
+html {
+    scroll-behavior: smooth;
+}
+
 .content-area{
     padding: 0 2rem;
 
@@ -37,3 +43,20 @@ body::-webkit-scrollbar {
     text-align: center;
     min-height: 100vh;
 }
+
+
+.skip-to-content-link {
+    z-index:500;
+    position: absolute;
+    top: 0;
+    transform: translateY(-120%);  
+    left: 90px;
+    transition: transform 0.3s;
+    padding: 5px;
+    background-color: variables.$honolulu;
+    color: variables.$gallery;
+  }
+
+  .skip-to-content-link:focus {
+    transform: translateY(0%);
+  }
