@@ -2,27 +2,15 @@
 
 .link-button-wrapper {
     text-align: center;
+    width: 170px;
+    margin: 0 auto;
+
+    a{
+      width: 100%;
+    }
 }
 
-// .link-button {
-//     text-transform: uppercase;
-//     height: 36px;
-//     width: 170px;
-//     border-radius: 10px;
-//     border: none;
-//     margin: 1rem auto;
-//     background-color: variables.$mineshaft;
-//     color: variables.$white;
 
-//     a {
-//         color: variables.$white;
-//     }
-
-// }
-
-// .link-button:hover {
-//     background-color: variables.$honolulu;
-// }
 
 
 
@@ -80,4 +68,15 @@
             color: variables.$white;
         }
 }
+}
+
+.link-button-small {
+  height: 25px;
+  width: 100px;
+  text-align: center;
+  font-weight: 500;
+  border: none;
+  display: inline-block;
+  border-radius: 10px;
+  color: #fff;
 }

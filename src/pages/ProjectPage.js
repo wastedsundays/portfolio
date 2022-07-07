@@ -20,7 +20,7 @@ function ProjectPage() {
   const [restData, setData] = useState([])    
   const [isLoaded, setLoadStatus] = useState(false)
 
-  // const [showMore, setShowMore] = useState(false);
+  const [showMore, setShowMore] = useState(false);
 
 
   useEffect(() => {
@@ -94,16 +94,20 @@ function ProjectPage() {
             <h3>{restData[0].acf.project_feature_title}</h3>
             <p dangerouslySetInnerHTML={{__html:restData[0].acf.project_feature}}></p>
             {restData[0].acf.code_demo !== '' &&
-              <SyntaxHighlighter language="javascript" style={vs}>
-                {restData[0].acf.code_demo}
-              </SyntaxHighlighter>
+              <>
+                <SyntaxHighlighter language="javascript" style={vs}>
+                  {showMore ? restData[0].acf.code_demo : restData[0].acf.code_demo.split(" ").slice(0, 25).join(" ")}
+                  {restData[0].acf.code_demo}
+                </SyntaxHighlighter>
+                <button className="link-button link-button-small" onClick={() => setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button>
+              </>
             }
           </div>
 
           {restData[0].acf.link_to_repo !== '' &&
           <div className='link-button-wrapper'>
             <a href={restData[0].acf.link_to_repo} target="_blank" rel="noreferrer">
-              <button className='link-button git-link'><GitHubIcon /> <p>Code</p></button>
+              <button className='link-button git-link'><GitHubIcon /> <p>GITHUB</p></button>
             </a>
           </div>
           }
