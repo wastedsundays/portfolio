@@ -56,9 +56,9 @@ function App() {
             </div>
             
           <BottomNav />
-          
+          <HeaderBar />
         </BrowserRouter>   
-        <HeaderBar />
+        
 
         <div className="lightswitch">
           <ReactSwitch  onChange={toggleTheme} 

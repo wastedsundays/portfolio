@@ -1,18 +1,19 @@
 import React from 'react';
-import Logo from '../images/ah-logo-blue.svg';
+import { NavHashLink } from 'react-router-hash-link';
+import SmallLogo from '../images/ah-logo-blue.svg';
 
 
 function HeaderBar() {
   return (
     <>
       <div className="headerbar">
-        <a href="#top">
+      <NavHashLink to="/#top">
         <img
-          src={Logo}
+          src={SmallLogo}
           className="small-nav-logo"
           alt="AH Logo small version"
         />
-        </a>
+        </NavHashLink>
       </div>
     </>
   )

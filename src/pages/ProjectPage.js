@@ -1,15 +1,16 @@
 import React from 'react';
-// import { Helmet } from 'react-helmet';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
-import HeaderBar from '../components/HeaderBar';
-import { NavHashLink } from 'react-router-hash-link';
-import Loading from '../components/Loading';
-import GitHubIcon from '@mui/icons-material/GitHub';
-
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { vs } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { NavHashLink } from 'react-router-hash-link';
+import HeaderBar from '../components/HeaderBar';
+import Loading from '../components/Loading';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
+
+
 
 
 function ProjectPage() {
@@ -160,6 +161,11 @@ function ProjectPage() {
                 </NavHashLink>
               }
             </div>
+          </div>
+          <div className='top-arrow'>
+            <NavHashLink to={`#top`}>
+              <ArrowCircleUpIcon fontSize='large'/>
+            </NavHashLink>
           </div>
         </div> 
 
