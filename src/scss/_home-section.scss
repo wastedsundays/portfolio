@@ -1,6 +1,5 @@
 @use 'variables';
 
-
 .home-section{
     text-align: center;
 	display: flex;
@@ -17,12 +16,15 @@
 
 .home-water h1 {
 	color: #fff;
-	font-size: 5em;
+	font-size: 4em;
     margin: 0;
+
+	@media screen and(min-width: 383px){
+		font-size: 5em;
+	}
 }
 
 #dark .home-water h1:nth-child(1) {
-
 	color: transparent;
 	-webkit-text-stroke: 2px variables.$honolulu;
 }
