@@ -63,8 +63,6 @@ function ProjectPage() {
           <div className='project-section'>
             <h3>{restData[0].acf.description_title}</h3>
             <p dangerouslySetInnerHTML={{__html:restData[0].acf.project_description}}></p>
-            {/* <p>{showMore ? restData[0].acf.project_description : restData[0].acf.project_description.split(" ").slice(0, 50).join(" ")} */}
-            {/* <button className="btn" onClick={() => setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button> */}
           </div>
 
           {restData[0].acf.link_to_live_site !== '' &&
@@ -75,6 +73,12 @@ function ProjectPage() {
           </div>
           }
 
+            {restData[0].acf.project_image_1 !== false &&
+              <div className='project-section'>
+                <img loading="lazy" src={restData[0].acf.project_image_1} alt="" className='project-image project-image-1'/>
+              </div>
+            }
+          
           <div className='project-section'>
             <h3>Tools Used</h3>
             <div className='project-tools-grid'>
@@ -89,12 +93,11 @@ function ProjectPage() {
           <div className='project-section'>
             <h3>{restData[0].acf.project_feature_title}</h3>
             <p dangerouslySetInnerHTML={{__html:restData[0].acf.project_feature}}></p>
-            {/* <p>{restData[0].acf.project_feature}</p> */}
             {restData[0].acf.code_demo !== '' &&
-
-            <SyntaxHighlighter language="javascript" style={vs}>
-              {restData[0].acf.code_demo}
-            </SyntaxHighlighter>}
+              <SyntaxHighlighter language="javascript" style={vs}>
+                {restData[0].acf.code_demo}
+              </SyntaxHighlighter>
+            }
           </div>
 
           {restData[0].acf.link_to_repo !== '' &&
@@ -104,6 +107,14 @@ function ProjectPage() {
             </a>
           </div>
           }
+          
+          
+          {restData[0].acf.project_image_2 !== false &&
+            <div className='project-section'>
+              <img loading="lazy" src={restData[0].acf.project_image_2} alt="" className='project-image project-image-2'/> 
+            </div>
+          }
+         
 
           {restData[0].acf.design_feature !=='' &&
             <div className='project-section'>
@@ -112,22 +123,13 @@ function ProjectPage() {
             </div>
           }
 
-          
-          {restData[0].acf.project_image_1 !== false &&
-          <img loading="lazy" src={restData[0].acf.project_image_1} alt="" className='project-image project-image-1'/>
-          }
-          {restData[0].acf.project_image_2 !== false &&
-          <img loading="lazy" src={restData[0].acf.project_image_2} alt="" className='project-image project-image-2'/> 
-          }
+
+          <div className="project-bottom-images project-section">
           {restData[0].acf.project_image_3 !== false &&
           <img loading="lazy" src={restData[0].acf.project_image_3} alt="" className='project-image project-image-3'/> 
           }  
-          <div className="project-bottom-images project-section">
           {restData[0].acf.project_image_4 !== false &&
           <img loading="lazy" src={restData[0].acf.project_image_4} alt="" className='project-image project-image-4'/> 
-          }  
-          {restData[0].acf.project_image_5 !== false &&
-          <img loading="lazy" src={restData[0].acf.project_image_5} alt="" className='project-image project-image-5'/> 
           }  
           </div>
 
@@ -138,6 +140,7 @@ function ProjectPage() {
             </a>
           </div>
           }
+
           <div className='project-section'>
           <h3>More Projects</h3>
             <div className='project-navigation'>

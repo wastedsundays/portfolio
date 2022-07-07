@@ -1,8 +1,9 @@
 @use 'variables';
+@use 'mixins' as m;
 
 .featured-image{
     width: 100%;
-    max-width: 700px;
+    max-width: 800px;
     display: block;
     margin: 0 auto;
 }
@@ -14,31 +15,23 @@
 #light{
     .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary {
         color: variables.$mineshaft;
-        font-family: "Poppins", sans-serif;
-        font-size: 1rem;
-        font-weight: 400;
+        @include m.mui-override;
     }
     .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.Mui-selected {
         color: variables.$honolulu;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-size: 1rem;
+        @include m.mui-override;
     }
 }
 
 #dark{
     .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary {
         color: variables.$gallery;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-size: 1rem;
+        @include m.mui-override;
     }
 
     .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.Mui-selected{
         color: variables.$cerulian;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-size: 1rem;
+        @include m.mui-override;
     }
 }
 

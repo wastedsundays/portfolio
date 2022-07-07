@@ -39,7 +39,7 @@ function App() {
         </Helmet>
               
         <BrowserRouter basename="/">
-          <a class="skip-to-content-link" href="#about  ">
+          <a className="skip-to-content-link" href="#about  ">
             Skip to content
           </a>
           <NavBar />

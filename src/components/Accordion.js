@@ -1,25 +1,18 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
 
-
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SchoolIcon from '@mui/icons-material/School';
 import DeveloperBoardIcon from '@mui/icons-material/DeveloperBoard';
-// import InfoIcon from '@mui/icons-material/Info';
 import AccountCircle from '@mui/icons-material/AccountCircle';
-
-
 import IsotopeReact from './Isotope';
 import Loading  from './Loading';
 
 export default function SimpleAccordion() {
 
-
-  //load the bio section
-  // const restPath = 'https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/pages/73'
   const restPath = 'https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/posts/229'
   const [restData, setData] = useState([])
   const [isLoaded, setLoadStatus] = useState(false)
@@ -53,12 +46,10 @@ export default function SimpleAccordion() {
 
         { isLoaded ?
           <AccordionDetails>
-                <div className="entry-content" dangerouslySetInnerHTML={{__html:restData.content.rendered}}></div>
-           
+                <div className="entry-content" dangerouslySetInnerHTML={{__html:restData.content.rendered}}></div>           
           </AccordionDetails>
         :
             <Loading />
-          
         }
       </Accordion>
       <Accordion>
@@ -70,9 +61,7 @@ export default function SimpleAccordion() {
           <DeveloperBoardIcon />Skills
         </AccordionSummary>
         <AccordionDetails>
-
-        <IsotopeReact />
-
+          <IsotopeReact />
         </AccordionDetails>
       </Accordion>
       <Accordion>
@@ -86,7 +75,7 @@ export default function SimpleAccordion() {
         <AccordionDetails>
           <div className="education-accordion">
             <div className="education-card">
-              <p className="education-institution">BCIT - Vancouver, BC</p>
+              <p className="education-institution">British Columbia Institute of Technology - Vancouver, BC</p>
               <p className="education-major">Front End Web Developer Certificate</p>
               <p className="education-duration">Jan 2022 - July 2022</p>
             </div>

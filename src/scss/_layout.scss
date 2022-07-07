@@ -7,7 +7,7 @@ html {
 .content-area{
     padding: 0 2rem;
 
-    @media screen and (min-width: 800px){
+    @media screen and (min-width: 900px){
         display: grid;
         grid-template-columns: minmax(30px, 1fr) minmax(420px, 1000px) minmax(30px, 1fr) 150px;
 
