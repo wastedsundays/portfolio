@@ -5,7 +5,7 @@ import  Record  from '../images/404record.gif';
 function Page404() {
   return (
     <div className="error-message">
-      <h1>Lost?</h1>
+      <p>Lost?</p>
       <div> 
         <img
                 src={Record}
