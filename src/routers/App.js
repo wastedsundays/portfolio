@@ -47,7 +47,7 @@ function App() {
             <div className='content-area'>
               <Routes>
                   <Route path='/' element={<MainPage />} />
-                  <Route path='/project-details/:slug' element={<ProjectPage />} />
+                  <Route path='/:slug' element={<ProjectPage />} />
                   <Route path='/audio' element={<AudioPage />} />
                   <Route path='/logos' element={<LogoPage />} />
                   <Route path='/test' element={<TestPage />} />
