@@ -33,10 +33,10 @@ function App() {
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className='main' id={theme}>
       <Helmet>
-            <meta charSet="utf-8" />
-            <title>Adam H. | Front End Web Developer</title>
-            <link rel="canonical" href="https://adamh.ca" />
-        </Helmet>
+        <title>Adam H. | Front End Web Developer | Home</title>
+        <link rel="canonical" href="https://adamh.ca" />
+        <meta name="description" content="A portfolio website for technical projects completed by a Adam Hauck, a Front-end web developer showcasing website design and use of HTML, CSS SASS, JavaScript, React and other web development skills and tools" />
+      </Helmet>
               
         <BrowserRouter basename="/">
           <a className="skip-to-content-link" href="#about  ">

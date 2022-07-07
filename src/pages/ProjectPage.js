@@ -46,9 +46,9 @@ function ProjectPage() {
 
       <div className='project-home-section'>
         <Helmet>
-            <meta charSet="utf-8" />
             <title>{restData[0].title.rendered} | Adam H.</title>
             <link rel="canonical" href={`https://adamh.ca/project-details/${slug}`} />
+            <meta name="description" content={`${restData[0].title.rendered}, a project completed by a Adam Hauck, a Front-end web developer based in Vancouer, BC`} />
         </Helmet>
 
         <img
