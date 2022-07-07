@@ -99,7 +99,7 @@ function ProjectPage() {
                   {showMore ? restData[0].acf.code_demo : restData[0].acf.code_demo.split(" ").slice(0, 25).join(" ")}
                   {restData[0].acf.code_demo}
                 </SyntaxHighlighter>
-                <button className="link-button link-button-small" onClick={() => setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button>
+                <button className="selector-buttons" onClick={() => setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button>
               </>
             }
           </div>
