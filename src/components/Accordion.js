@@ -48,12 +48,11 @@ export default function SimpleAccordion() {
           <AccordionDetails>
               <div className="accordion-bio">
                 <div className="entry-content" dangerouslySetInnerHTML={{__html:restData.acf.bio}}></div>
-                <img src={restData.acf.hero_image.sizes.medium} alt={restData.acf.hero_image.alt}/>
-                {/* <img  srcset={`${restData.acf.hero_image.sizes.thumbnail} ${restData.acf.hero_image.sizes.thumbnail-width}w,
-                               ${restData.acf.hero_image.sizes.medium} ${restData.acf.hero_image.sizes.medium-width}w`}
-                      sizes={`(max-width: 300px) ${restData.acf.hero_image.sizes.thumbnail-width}px, ${restData.acf.hero_image.sizes.medium-width}px`}
+                <img  srcSet={`${restData.acf.hero_image.sizes.thumbnail} ${restData.acf.hero_image.sizes['thumbnail-width']}w,
+                               ${restData.acf.hero_image.sizes.medium} ${restData.acf.hero_image.sizes['medium-width']}w`}
+                      sizes={`(max-width: 300px) ${restData.acf.hero_image.sizes['thumbnail-width']}px, ${restData.acf.hero_image.sizes['medium-width']}px`}
                       src={restData.acf.hero_image.sizes.medium}
-                      alt={restData.acf.hero_image.alt}/> */}
+                      alt={restData.acf.hero_image.alt}/>
               </div>
           </AccordionDetails>
         :
