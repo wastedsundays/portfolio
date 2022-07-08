@@ -159,6 +159,13 @@ function ProjectPage() {
           }
 
           <div className='project-section'>
+            {/* <h3>{restData[0].acf.project_conclusion}</h3> */}
+            <p dangerouslySetInnerHTML={{__html:restData[0].acf.project_conclusion}}></p>
+          </div>
+
+
+
+          <div className='project-section'>
           <h3>More Projects</h3>
             <div className='project-navigation'>
               {restData[0].previous !=='' &&

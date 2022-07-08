@@ -28,7 +28,6 @@ function ContactSection() {
             navigator.clipboard.writeText('ad.hauck@gmail.com');
             alert('Email address copied to clipboard');
             }}/>
-          {/* </button>  */}
           <a href="mailto:ad.hauck@gmail.com?subject='Han%20Shot%20First'">         
             <ImMail />
           </a>
