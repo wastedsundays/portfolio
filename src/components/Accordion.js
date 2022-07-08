@@ -54,6 +54,7 @@ export default function SimpleAccordion() {
                       src={restData.acf.hero_image.sizes.medium}
                       alt={restData.acf.hero_image.alt}/>
               </div>
+              
           </AccordionDetails>
         :
             <Loading />
