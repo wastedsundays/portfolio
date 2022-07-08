@@ -46,7 +46,7 @@ export default function BasicTabs() {
   };
   
   
-const restPath = 'https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/fwd-projects?acf_format=standard&filter[orderby]=date&order=asc'
+const restPath = 'https://adamh.ca/portfolio/wordpress/wp-json/wp/v2/fwd-projects?acf_format=standard&featured-projects=24&filter[orderby]=date&order=asc'
     
 const [restData, setData] = useState([])    
 const [isLoaded, setIsLoaded] = useState(false)
