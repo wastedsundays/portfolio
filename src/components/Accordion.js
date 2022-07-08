@@ -49,7 +49,8 @@ export default function SimpleAccordion() {
                                ${restData.acf.hero_image.sizes.medium} ${restData.acf.hero_image.sizes['medium-width']}w`}
                       sizes={`(max-width: 300px) ${restData.acf.hero_image.sizes['thumbnail-width']}px, ${restData.acf.hero_image.sizes['medium-width']}px`}
                       src={restData.acf.hero_image.sizes.medium}
-                      alt={restData.acf.hero_image.alt}/>
+                      alt={restData.acf.hero_image.alt}
+                      className="hero-image"/>
               </div>
           </AccordionDetails>
         :

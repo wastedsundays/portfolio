@@ -96,7 +96,7 @@ const [isLoaded, setIsLoaded] = useState(false)
                       </div>
                     <div className='link-button-wrapper'>
                       <NavLink to={`/projects/${proj2.slug}`}>
-                        <button className="link-button">See More</button>
+                        <button className="link-button">More Details</button>
                       </NavLink>
                     </div>
                   </TabPanel>)}
