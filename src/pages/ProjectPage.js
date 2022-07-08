@@ -49,7 +49,7 @@ function ProjectPage() {
         <Helmet>
             <title>{restData[0].title.rendered} | Adam H.</title>
             <link rel="canonical" href={`https://adamh.ca/projects/${slug}`} />
-            <meta name="description" content={`${restData[0].title.rendered}, a project completed by a Adam Hauck, a Front-end web developer based in Vancouer, BC`} />
+            <meta name="description" content={restData[0].acf.project_meta_description} />
         </Helmet>
 
         <img
