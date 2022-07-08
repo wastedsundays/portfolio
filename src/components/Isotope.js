@@ -6,6 +6,7 @@ import cakewalk from '../skills/small-skill-icon-cakewalk.png';
 import crystal from '../skills/small-skill-icon-crystalreports.png';
 import css from '../skills/small-skill-icon-css.png';
 import excel from '../skills/small-skill-icon-excel.png';
+import figma from '../skills/small-skill-icon-figma.png';
 import git from '../skills/small-skill-icon-git.png';
 import gulp from '../skills/small-skill-icon-gulp.png';
 import HTML from '../skills/small-skill-icon-html.png';
@@ -93,76 +94,79 @@ const IsotopeReact = () => {
         
         <ul className="filter-container">
           <div className="filter-item dev">
-            <img src={bootstrap} alt="Bootstrap"/>
+            <img src={bootstrap} alt="Bootstrap Icon with name in text underneath"/>
           </div>
           <div className="filter-item other">
-            <img src={cakewalk} alt="Cakewalk"/>
+            <img src={cakewalk} alt="Cakewalk Icon with name in text underneath"/>
           </div>
           <div className="filter-item other">
-            <img src={crystal} alt="Crystal Reports"/>
+            <img src={crystal} alt="Crystal Reports Icon with name in text underneath"/>
           </div>
           <div className="filter-item dev fave">
-            <img src={css} alt="CSS"/>
+            <img src={css} alt="CSS Icon with name in text underneath"/>
           </div>
           <div className="filter-item other fave">
-            <img src={excel} alt="Excel"/>
+            <img src={excel} alt="Excel Icon with name in text underneath"/>
+          </div>
+          <div className="filter-item design">
+            <img src={figma} alt="Figma Icon with name in text underneath"/>
           </div>
           <div className="filter-item dev">
-            <img src={git} alt="Git"/>
+            <img src={git} alt="Git Icon with name in text underneath"/>
           </div>
           <div className="filter-item dev">
-            <img src={gulp} alt="Gulp"/>
+            <img src={gulp} alt="Gulp Icon with name in text underneath"/>
           </div>
           <div className="filter-item dev fave">
-            <img src={HTML} alt="html"/>
+            <img src={HTML} alt="html Icon with name in text underneath"/>
           </div>
           <div className="filter-item design fave">
-            <img src={illustrator} alt="Illustrator"/>
+            <img src={illustrator} alt="Illustrator Icon with name in text underneath"/>
           </div>
           <div className="filter-item dev">
-            <img src={javascript} alt="JavaScript"/>
+            <img src={javascript} alt="JavaScript Icon with name in text underneath"/>
           </div>
           <div className="filter-item other">
-            <img src={jetreports} alt="Jet Reports"/>
+            <img src={jetreports} alt="Jet Reports Icon with name in text underneath"/>
           </div>
           <div className="filter-item dev">
-            <img src={jquery} alt="jQuery"/>
+            <img src={jquery} alt="jQuery Icon with name in text underneath"/>
           </div>
           <div className="filter-item design fave">
-            <img src={photoshop} alt="Photoshop"/>
+            <img src={photoshop} alt="Photoshop Icon with name in text underneath"/>
           </div>
           <div className="filter-item dev fave">
-            <img src={php} alt="PHP"/>
+            <img src={php} alt="PHP Icon with name in text underneath"/>
           </div>
           <div className="filter-item other">
-            <img src={powerbi} alt="Power BI"/>
+            <img src={powerbi} alt="Power BI Icon with name in text underneath"/>
           </div>
           <div className="filter-item dev">
-            <img src={react} alt="React"/>
+            <img src={react} alt="React Icon with name in text underneath"/>
           </div>
           <div className="filter-item dev fave">
-            <img src={restapi} alt="RestAPI"/>
+            <img src={restapi} alt="RestAPI Icon with name in text underneath"/>
           </div>
           <div className="filter-item dev">
-            <img src={sass} alt="SASS"/>
+            <img src={sass} alt="SASS Icon with name in text underneath"/>
           </div>
           <div className="filter-item dev">
-            <img src={shopify} alt="Shopify"/>
+            <img src={shopify} alt="Shopify Icon with name in text underneath"/>
           </div>
           <div className="filter-item dev">
-            <img src={sql} alt="SQL"/>
+            <img src={sql} alt="SQL Icon with name in text underneath"/>
           </div>
           <div className="filter-item dev fave">
-            <img src={vscode} alt="VS Code"/>
+            <img src={vscode} alt="VS Code Icon with name in text underneath"/>
           </div>
           <div className="filter-item dev fave">
-            <img src={woocommerce} alt="WooCommerce"/>
+            <img src={woocommerce} alt="WooCommerce Icon with name in text underneath"/>
           </div>
           <div className="filter-item dev fave">
-            <img src={wordpress} alt="WordPress"/>
+            <img src={wordpress} alt="WordPress Icon with name in text underneath"/>
           </div>
           <div className="filter-item design fave">
-            <img src={xd} alt="XD"/>
+            <img src={xd} alt="XD Icon with name in text underneath"/>
     </div>
 
         </ul> 

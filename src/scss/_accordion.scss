@@ -38,7 +38,6 @@
         color: variables.$gallery;
     }
 
-
     .about-section .MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium {
         color: variables.$gallery;
     }
@@ -93,10 +92,18 @@
 
         .education-duration{
             font-style: italic;
+
+            @media screen and(min-width:600px) {
+            padding-left: 1rem;
+            }
         }
 
         .education-notes {
-            padding-left: .5rem;
+            padding-left: 1rem;
+            font-size: 90%;
+            @media screen and(min-width:600px) {
+                padding-left: 2rem;
+            }
         }
     }
 }
