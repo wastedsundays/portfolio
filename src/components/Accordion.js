@@ -46,6 +46,7 @@ export default function SimpleAccordion() {
 
         { isLoaded ?
           <AccordionDetails>
+
               <div className="accordion-bio">
                 <div className="entry-content" dangerouslySetInnerHTML={{__html:restData.acf.bio}}></div>
                 <img  srcSet={`${restData.acf.hero_image.sizes.thumbnail} ${restData.acf.hero_image.sizes['thumbnail-width']}w,
@@ -81,25 +82,21 @@ export default function SimpleAccordion() {
           <SchoolIcon />Education
         </AccordionSummary>
         <AccordionDetails>
-          <div className="education-accordion">
-            <div className="education-card">
-              <p className="education-institution">British Columbia Institute of Technology - Vancouver, BC</p>
-              <p className="education-major">Front End Web Developer Certificate</p>
-              <p className="education-duration">Jan 2022 - July 2022</p>
-            </div>
-            <div className="education-card">
-              <p className="education-institution">Fanshawe College - London, ON</p>
-              <p className="education-major">Diploma - Accounting</p>
-              <p className="education-duration">Sept 2005 - Apr 2007</p>
-              <p className="education-notes">Received Fanshawe College Scholastic Excellence Award.</p>
-            </div>
-            <div className="education-card">
-              <p className="education-institution">Wilfrid Laurier University - Waterloo, ON</p>
-              <p className="education-major">Major: Communications</p>
-              <p className="education-duration">Sept 1997 - Apr 1998</p>
-            </div>
-          </div>
 
+        { isLoaded ? 
+          <div className="education-accordion">
+          {restData.acf.education.map((edu, i) => 
+            <div className="education-card">
+              <p key={i} className="education-institution">{`${restData.acf.education[i].school} - ${restData.acf.education[i].location}`}</p>
+              <p className="education-major">{restData.acf.education[i].major}</p>
+              <p className="education-duration">{`${restData.acf.education[i].start_date} - ${restData.acf.education[i].end_date}`}</p>
+              <p className="education-notes">{restData.acf.education[i].school_notes}</p>
+            </div>
+            )}
+          </div>
+      :
+      <Loading />
+      }
 
         </AccordionDetails>
       </Accordion>
