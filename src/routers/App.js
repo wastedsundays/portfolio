@@ -3,7 +3,6 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import ReactSwitch from 'react-switch';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
-import TestPage from '../pages/TestPage';
 import MainPage from '../pages/MainPage';
 import ProjectPage from '../pages/ProjectPage';
 import AudioPage from '../pages/AudioPage';
@@ -50,7 +49,6 @@ function App() {
                   <Route path='/projects/:slug' element={<ProjectPage />} />
                   <Route path='/audio' element={<AudioPage />} />
                   <Route path='/logos' element={<LogoPage />} />
-                  <Route path='/test' element={<TestPage />} />
                   <Route path='/*' element={<Page404 />} />  
               </Routes> 
             </div>
