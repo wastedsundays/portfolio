@@ -54,7 +54,7 @@ function ProjectPage() {
 
         <img
           src={restData[0].acf.project_featured_image.url}
-          className="featured-image"
+          className="project-featured-image"
           alt={restData[0].acf.project_featured_image.alt}
         />
         
