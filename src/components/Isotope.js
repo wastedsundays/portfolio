@@ -100,7 +100,7 @@ const IsotopeReact = () => {
           <div className="filter-item other">
             <img src={businesscentral} alt="Business Central Icon with name in text underneath"/>
           </div>
-          <div className="filter-item other">
+          <div className="filter-item other fave">
             <img src={cakewalk} alt="Cakewalk Icon with name in text underneath"/>
           </div>
           <div className="filter-item other">
@@ -127,7 +127,7 @@ const IsotopeReact = () => {
           <div className="filter-item design fave">
             <img src={illustrator} alt="Illustrator Icon with name in text underneath"/>
           </div>
-          <div className="filter-item dev">
+          <div className="filter-item dev fave">
             <img src={javascript} alt="JavaScript Icon with name in text underneath"/>
           </div>
           <div className="filter-item other">
@@ -145,7 +145,7 @@ const IsotopeReact = () => {
           <div className="filter-item other">
             <img src={powerbi} alt="Power BI Icon with name in text underneath"/>
           </div>
-          <div className="filter-item dev">
+          <div className="filter-item dev fave">
             <img src={react} alt="React Icon with name in text underneath"/>
           </div>
           <div className="filter-item dev fave">
@@ -154,10 +154,10 @@ const IsotopeReact = () => {
           <div className="filter-item dev">
             <img src={sass} alt="SASS Icon with name in text underneath"/>
           </div>
-          <div className="filter-item dev">
+          <div className="filter-item dev fave">
             <img src={shopify} alt="Shopify Icon with name in text underneath"/>
           </div>
-          <div className="filter-item dev">
+          <div className="filter-item dev fave">
             <img src={sql} alt="SQL Icon with name in text underneath"/>
           </div>
           <div className="filter-item dev fave">
