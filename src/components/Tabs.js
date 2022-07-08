@@ -95,7 +95,7 @@ const [isLoaded, setIsLoaded] = useState(false)
                         <p>{proj2.acf.project_excerpt}</p>
                       </div>
                     <div className='link-button-wrapper'>
-                      <NavLink to={`/${proj2.slug}`}>
+                      <NavLink to={`/projects/${proj2.slug}`}>
                         <button className="link-button">See More</button>
                       </NavLink>
                     </div>

@@ -47,11 +47,11 @@ function App() {
             <div className='content-area'>
               <Routes>
                   <Route path='/' element={<MainPage />} />
-                  <Route path='/:slug' element={<ProjectPage />} />
+                  <Route path='/projects/:slug' element={<ProjectPage />} />
                   <Route path='/audio' element={<AudioPage />} />
                   <Route path='/logos' element={<LogoPage />} />
                   <Route path='/test' element={<TestPage />} />
-                  <Route path='*' element={<Page404 />} />  
+                  <Route path='/*' element={<Page404 />} />  
               </Routes> 
             </div>
             

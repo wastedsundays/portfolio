@@ -48,7 +48,7 @@ function ProjectPage() {
       <div className='project-home-section'>
         <Helmet>
             <title>{restData[0].title.rendered} | Adam H.</title>
-            <link rel="canonical" href={`https://adamh.ca/${slug}`} />
+            <link rel="canonical" href={`https://adamh.ca/projects/${slug}`} />
             <meta name="description" content={`${restData[0].title.rendered}, a project completed by a Adam Hauck, a Front-end web developer based in Vancouer, BC`} />
         </Helmet>
 
@@ -167,13 +167,13 @@ function ProjectPage() {
           <h3>More Projects</h3>
             <div className='project-navigation'>
               {restData[0].previous !=='' &&
-                <NavHashLink to={`/${restData[0].previous.slug}#top`}>
+                <NavHashLink to={`/projects/${restData[0].previous.slug}#top`}>
                 <button className="link-button">{restData[0].previous.title}</button>
               </NavHashLink>
                 
               }
               {restData[0].next !=='' &&
-                <NavHashLink to={`/${restData[0].next.slug}#top`}>
+                <NavHashLink to={`/projects/${restData[0].next.slug}#top`}>
                 <button className="link-button">{restData[0].next.title}</button>
                 </NavHashLink>
               }
