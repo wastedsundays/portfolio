@@ -1,22 +1,21 @@
 import React from 'react'
 import { FaGithubSquare } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
-// import $ from "jquery";
+import { ImMail } from 'react-icons/im';
+import { FaCopy } from 'react-icons/fa';
+
 
 
 
 function ContactSection() {
+
 
   return (
     <section className='contact-section' id='contact'>
 
         <h2>Get in touch</h2>
         <div className='contact-box'>
-          <p>ad.hauck@gmail.com</p>
-          {/* <button className='link-button' onClick={() =>  navigator.clipboard.writeText('ad.hauck@gmail.com')}>
-            Copy
-          </button> */}
-          <div>
+        <div>
             <a href="https://github.com/wastedsundays" target="_blank" rel="noreferrer">
               <FaGithubSquare />
             </a>
@@ -24,6 +23,16 @@ function ContactSection() {
               <FaLinkedin />
             </a>
           </div>
+          <p>ad.hauck@gmail.com</p>
+            <FaCopy onClick={() =>  {
+            navigator.clipboard.writeText('ad.hauck@gmail.com');
+            alert('Email address copied to clipboard');
+            }}/>
+          {/* </button>  */}
+          <a href="mailto:ad.hauck@gmail.com?subject='Han%20Shot%20First'">         
+            <ImMail />
+          </a>
+
         </div>
     </section>
   )
