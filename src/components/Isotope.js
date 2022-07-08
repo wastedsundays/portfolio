@@ -92,7 +92,6 @@ const IsotopeReact = () => {
 
         
         <ul className="filter-container">
-          {/* <Loop /> */}
           <div className="filter-item dev">
             <img src={bootstrap} alt="Bootstrap"/>
           </div>

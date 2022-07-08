@@ -4,11 +4,7 @@ import { FaLinkedin } from 'react-icons/fa';
 import { ImMail } from 'react-icons/im';
 import { FaCopy } from 'react-icons/fa';
 
-
-
-
 function ContactSection() {
-
 
   return (
     <section className='contact-section' id='contact'>

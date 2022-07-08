@@ -8,15 +8,10 @@ import PersonIcon from '@mui/icons-material/Person';
 import DevicesIcon from '@mui/icons-material/Devices';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 
-
-
-
-
 function NavBar() {
 
   return (
     <nav className='navbar'>
-
         <NavHashLink smooth to='/#top'>
             <img
                 src={Logo}
@@ -62,10 +57,8 @@ function NavBar() {
         </ul>
         <div className="navbar-text">
             <p>&copy; 2022 Adam H.</p>
-        </div>
-        
+        </div>   
     </nav>
-
   )
 }
 

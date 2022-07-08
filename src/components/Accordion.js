@@ -86,8 +86,8 @@ export default function SimpleAccordion() {
         { isLoaded ? 
           <div className="education-accordion">
           {restData.acf.education.map((edu, i) => 
-            <div className="education-card">
-              <p key={i} className="education-institution">{`${restData.acf.education[i].school} - ${restData.acf.education[i].location}`}</p>
+            <div key={i} className="education-card">
+              <p className="education-institution">{`${restData.acf.education[i].school} - ${restData.acf.education[i].location}`}</p>
               <p className="education-major">{restData.acf.education[i].major}</p>
               <p className="education-duration">{`${restData.acf.education[i].start_date} - ${restData.acf.education[i].end_date}`}</p>
               <p className="education-notes">{restData.acf.education[i].school_notes}</p>
