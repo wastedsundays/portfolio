@@ -185,15 +185,8 @@ function ProjectPage() {
             </NavHashLink>
           </div>
         </div> 
-
-
-
       </div>
-
-      
-    
       :
-
       <section className='loading'>
         <Loading />
       </section>

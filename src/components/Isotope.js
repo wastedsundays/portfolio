@@ -2,6 +2,7 @@ import * as React from 'react';
 import Isotope from 'isotope-layout';
 
 import bootstrap from '../skills/small-skill-icon-bootstrap.png';
+import businesscentral from '../skills/small-skill-icon-businesscentral.png';
 import cakewalk from '../skills/small-skill-icon-cakewalk.png';
 import crystal from '../skills/small-skill-icon-crystalreports.png';
 import css from '../skills/small-skill-icon-css.png';
@@ -97,6 +98,9 @@ const IsotopeReact = () => {
             <img src={bootstrap} alt="Bootstrap Icon with name in text underneath"/>
           </div>
           <div className="filter-item other">
+            <img src={businesscentral} alt="Business Central Icon with name in text underneath"/>
+          </div>
+          <div className="filter-item other">
             <img src={cakewalk} alt="Cakewalk Icon with name in text underneath"/>
           </div>
           <div className="filter-item other">
@@ -167,8 +171,7 @@ const IsotopeReact = () => {
           </div>
           <div className="filter-item design fave">
             <img src={xd} alt="XD Icon with name in text underneath"/>
-    </div>
-
+          </div>
         </ul> 
       </>
     )
