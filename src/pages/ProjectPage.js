@@ -53,9 +53,9 @@ function ProjectPage() {
         </Helmet>
 
         <img
-          src={restData[0].acf.project_featured_image}
+          src={restData[0].acf.project_featured_image.url}
           className="featured-image"
-          alt={`${restData[0].title.rendered} screenshot`}
+          alt={restData[0].acf.project_featured_image.alt}
         />
         
         <div className='project-details'>
@@ -76,7 +76,10 @@ function ProjectPage() {
 
             {restData[0].acf.project_image_1 !== false &&
               <div className='project-section'>
-                <img loading="lazy" src={restData[0].acf.project_image_1} alt="" className='project-image project-image-1'/>
+                <figure>
+                  <img loading="lazy" src={restData[0].acf.project_image_1.url} alt={restData[0].acf.project_image_1.alt} className='project-image project-image-1'/>
+                  <figcaption>{restData[0].acf.project_image_1.caption}</figcaption>
+                </figure>
               </div>
             }
           
@@ -116,7 +119,10 @@ function ProjectPage() {
           
           {restData[0].acf.project_image_2 !== false &&
             <div className='project-section'>
-              <img loading="lazy" src={restData[0].acf.project_image_2} alt="" className='project-image project-image-2'/> 
+              <figure>
+                <img loading="lazy" src={restData[0].acf.project_image_2.url} alt={restData[0].acf.project_image_2.alt} className='project-image project-image-2'/> 
+                <figcaption>{restData[0].acf.project_image_2.caption}</figcaption>
+              </figure>
             </div>
           }
          
@@ -131,10 +137,16 @@ function ProjectPage() {
 
           <div className="project-bottom-images project-section">
           {restData[0].acf.project_image_3 !== false &&
-          <img loading="lazy" src={restData[0].acf.project_image_3} alt="" className='project-image project-image-3'/> 
+          <figure>
+            <img loading="lazy" src={restData[0].acf.project_image_3.url} alt={restData[0].acf.project_image_3.alt} className='project-image project-image-3'/>
+            <figcaption>{restData[0].acf.project_image_3.caption}</figcaption> 
+          </figure>
           }  
           {restData[0].acf.project_image_4 !== false &&
-          <img loading="lazy" src={restData[0].acf.project_image_4} alt="" className='project-image project-image-4'/> 
+          <figure>
+            <img loading="lazy" src={restData[0].acf.project_image_4.url} alt={restData[0].acf.project_image_4.alt} className='project-image project-image-4'/> 
+            <figcaption>{restData[0].acf.project_image_4.caption}</figcaption>
+          </figure>
           }  
           </div>
 
