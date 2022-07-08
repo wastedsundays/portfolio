@@ -157,13 +157,11 @@ function ProjectPage() {
             </a>
           </div>
           }
-
+          {restData[0].acf.project_conclusion !== '' &&
           <div className='project-section'>
-            {/* <h3>{restData[0].acf.project_conclusion}</h3> */}
             <p dangerouslySetInnerHTML={{__html:restData[0].acf.project_conclusion}}></p>
           </div>
-
-
+          }
 
           <div className='project-section'>
           <h3>More Projects</h3>
