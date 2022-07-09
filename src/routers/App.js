@@ -50,6 +50,7 @@ function App() {
                   <Route path='/audio' element={<AudioPage />} />
                   <Route path='/logos' element={<LogoPage />} />
                   <Route path='/*' element={<Page404 />} />  
+                  <Route path='/projects/*' element={<Page404 />} />  
               </Routes> 
             </div>
             
