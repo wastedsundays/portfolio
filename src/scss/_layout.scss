@@ -5,9 +5,12 @@ html {
 }
 
 .content-area{
-    padding: 0 2rem;
+    padding: 0 .5rem;
+    max-width: 700px;
+    margin: 0 auto;
 
     @media screen and (min-width: 900px){
+        max-width: 1500px;
         display: grid;
         grid-template-columns: minmax(30px, 1fr) minmax(420px, 1000px) minmax(30px, 1fr) 150px;
 
