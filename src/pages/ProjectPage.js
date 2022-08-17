@@ -10,9 +10,6 @@ import Loading from '../components/Loading';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 
-
-
-
 function ProjectPage() {
   const { slug } = useParams()
 
