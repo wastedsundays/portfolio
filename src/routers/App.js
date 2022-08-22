@@ -7,6 +7,7 @@ import MainPage from '../pages/MainPage';
 import ProjectPage from '../pages/ProjectPage';
 import AudioPage from '../pages/AudioPage';
 import LogoPage from '../pages/LogoPage';
+import OtherProjects from '../pages/OtherProjects';
 import Page404 from '../pages/Page404';
 import NavBar from '../components/NavBar';
 import HeaderBar from '../components/HeaderBar';
@@ -51,6 +52,7 @@ function App() {
                   <Route path='/logos' element={<LogoPage />} />
                   <Route path='/*' element={<Page404 />} />  
                   <Route path='/projects/*' element={<Page404 />} />  
+                  <Route path='/projects' element={<OtherProjects />} />  
               </Routes> 
             </div>
             
