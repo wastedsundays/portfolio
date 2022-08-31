@@ -5,7 +5,7 @@ function OtherProjects() {
     return (
         <>
         <h1>ALL Projects</h1>
-        <p>Other projects go here</p>
+        <p>Page under development</p>
         </>
     )
 }
