@@ -4,7 +4,7 @@ import Tabs from "../components/Tabs";
 function ProjectsSection() {
   return (
     <section className='projects-section' id='projects'>
-        <h2>Projects</h2>
+        <h2>Featured Projects</h2>
         <Tabs />
     </section>
   )

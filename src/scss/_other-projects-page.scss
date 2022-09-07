@@ -1,0 +1,19 @@
+.all-projects-section {
+    grid-column-start: 2;
+}
+
+.all-projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.single-all-project {
+    max-width: 400px;
+
+    p {
+        font-size: .8rem;
+    }
+}
+
