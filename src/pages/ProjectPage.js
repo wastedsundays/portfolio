@@ -176,9 +176,15 @@ function ProjectPage() {
               }
             </div>
           </div>
+
           <div className='top-arrow'>
             <NavHashLink to={`#top`}>
               <ArrowCircleUpIcon fontSize='large'/>
+            </NavHashLink>
+          </div>
+          <div className='link-button-wrapper'>
+            <NavHashLink to={`/projects/`}>
+              <button className="link-button">All Projects</button>
             </NavHashLink>
           </div>
         </div> 

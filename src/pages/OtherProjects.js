@@ -32,6 +32,11 @@ const [isLoaded, setIsLoaded] = useState(false)
         <div key={proj2.id}>
             <h3>{proj2.title.rendered}</h3>
             <a href={proj2.acf.link_to_live_site} target="_blank" rel="noreferrer"><button>Live Site</button></a>
+            <img
+                src={proj2.acf.project_featured_image.url}
+                className="project-featured-image"
+                alt={proj2.acf.project_featured_image.alt}
+                />
             {(proj2["featured-projects"].length) !== 0 && 
             <NavHashLink to={`/projects/${proj2.slug}`}><button>Details</button></NavHashLink>
             }
