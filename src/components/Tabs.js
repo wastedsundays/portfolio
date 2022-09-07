@@ -93,10 +93,15 @@ const [isLoaded, setIsLoaded] = useState(false)
                       <div className='project-section'>
                         <h3>{proj2.title.rendered}</h3>
                         <p>{proj2.acf.project_excerpt}</p>
+                        <div className='link-button-wrapper'>
+                          <NavLink to={`/projects/${proj2.slug}`}>
+                            <button className="link-button">More Details</button>
+                          </NavLink>
+                        </div>
                       </div>
                     <div className='link-button-wrapper'>
-                      <NavLink to={`/projects/${proj2.slug}`}>
-                        <button className="link-button">More Details</button>
+                      <NavLink to={`/projects/`}>
+                        <button className="link-button">All Projects</button>
                       </NavLink>
                     </div>
                   </TabPanel>)}
