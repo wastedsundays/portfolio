@@ -26,7 +26,7 @@ const [isLoaded, setIsLoaded] = useState(false)
 
     return (
         <div className='all-projects-section'>
-            <h1>ALL Projects</h1>
+            <h1>All Projects</h1>
             <p>Page under development</p>
             <div className='all-projects-grid'>
                 {restData.map((proj2, i) =>
