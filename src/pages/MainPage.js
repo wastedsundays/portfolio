@@ -10,8 +10,8 @@ function MainPage() {
     <div className='grid-align'>
 
         <HomeSection />
-        <AboutSection />
         <ProjectsSection />
+        <AboutSection />
         <ContactSection />
     </div>
   )

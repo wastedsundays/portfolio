@@ -30,14 +30,6 @@ function NavBar() {
                 </NavHashLink>
             </li>
             <li>
-                <NavHashLink smooth to='/#about'>
-                    <div className="nav-button">
-                        <PersonIcon />
-                        <p>About</p>
-                    </div>
-                </NavHashLink>
-            </li>
-            <li>
                 <NavHashLink smooth to='/#projects'>
                     <div className="nav-button">
                         <DevicesIcon />
@@ -45,6 +37,15 @@ function NavBar() {
                     </div>
                 </NavHashLink>
             </li>
+            <li>
+                <NavHashLink smooth to='/#about'>
+                    <div className="nav-button">
+                        <PersonIcon />
+                        <p>About</p>
+                    </div>
+                </NavHashLink>
+            </li>
+
             <li>
                 <NavHashLink smooth to='/#contact'>
                     <div className="nav-button">
