@@ -39,9 +39,9 @@ const [isLoaded, setIsLoaded] = useState(false)
                         alt={proj2.acf.project_featured_image.alt}
                         />
                     <div className="small-button-links">    
-                        <a href={proj2.acf.link_to_live_site} target="_blank" rel="noreferrer"><button>Live Site</button></a>
+                        <a href={proj2.acf.link_to_live_site} target="_blank" rel="noreferrer"><button className='link-button small-button'>Live Site</button></a>
                         {(proj2["featured-projects"].length) !== 0 && 
-                        <NavHashLink to={`/projects/${proj2.slug}`}><button>Details</button></NavHashLink>
+                        <NavHashLink to={`/projects/${proj2.slug}`}><button className='link-button small-button'>Details</button></NavHashLink>
                         }
                     </div>
                     <p classname='single-all-project-excerpt' dangerouslySetInnerHTML={{__html:proj2.acf.project_excerpt}}></p>
