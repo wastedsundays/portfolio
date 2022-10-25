@@ -18,15 +18,15 @@ function BottomNav() {
             </NavHashLink>
           </li>
           <li>
-            <NavHashLink smooth to="/#about" >
-              <PersonIcon />
-              <p>About</p>
-            </NavHashLink>
-          </li>
-          <li>
             <NavHashLink smooth to="/#projects" >
               <DevicesIcon />
               <p>Projects</p>
+            </NavHashLink>
+          </li>
+          <li>
+            <NavHashLink smooth to="/#about" >
+              <PersonIcon />
+              <p>About</p>
             </NavHashLink>
           </li>
           <li>
