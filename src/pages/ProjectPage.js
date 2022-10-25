@@ -184,7 +184,7 @@ function ProjectPage() {
           </div>
           <div className='link-button-wrapper'>
             <NavHashLink to={`/projects/`}>
-              <button className="link-button">All Projects</button>
+              <button className="link-button all-projects-button">All Projects</button>
             </NavHashLink>
           </div>
         </div> 
