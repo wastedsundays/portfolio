@@ -6,8 +6,6 @@ Designed and developed by Adam H.
 
 ### Tools Used
 
-Users should be able to:
-
 - React
 - Material UI elements
 - WordPress API
